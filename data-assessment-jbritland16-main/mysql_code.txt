@@ -1,0 +1,202 @@
+# Databases Assessment
+# MySQL Queries
+# PART 1A: ER Diagrams are included as PNG files in the project folder
+
+
+# ===================================== PART 1B: CREATION AND CONSTRUCTION OF DATABASE ===================================
+CREATE database myhomes_db;
+
+USE myhomes_db;
+
+# Definition of the four tables used in the database: sales_rep, geo_area, customer, property
+CREATE table sales_rep(rep_email VARCHAR(40),
+					   rep_name VARCHAR(30),
+					   supervisor_email VARCHAR(40),
+					   rep_area_id INT,
+					   rep_salary INT,
+					   rep_startdate DATETIME,
+					   CONSTRAINT PK_sales_rep PRIMARY KEY (rep_email));
+					   
+# Each sales rep reports to a supervisor, which must reference the sales rep table
+ALTER table sales_rep ADD CONSTRAINT FK_super_email FOREIGN KEY (supervisor_email) REFERENCES sales_rep(rep_email);
+
+CREATE table geo_area(area_id INT,
+					  area_name VARCHAR(15) UNIQUE NOT NULL,
+					  chief_rep_email VARCHAR(40),
+					  CONSTRAINT PK_geo_area PRIMARY KEY (area_id),
+					  CONSTRAINT FK_chief_rep FOREIGN KEY (chief_rep_email) REFERENCES sales_rep(rep_email));
+
+# Each sales rep covers a geographic area, which can now be referenced with a foreign key					  
+ALTER table sales_rep ADD CONSTRAINT FK_geo_area FOREIGN KEY (rep_area_id) REFERENCES geo_area(area_id);
+
+
+CREATE table customer(customer_id INT,
+					  contact_name VARCHAR(30),
+					  contact_email VARCHAR(40) NOT NULL,
+					  contact_address VARCHAR(40),
+					  contact_city VARCHAR(15),
+					  contact_locality VARCHAR(15),
+					  contact_country VARCHAR(15),
+					  contact_phone VARCHAR(13),
+					  assigned_rep_email VARCHAR(40),
+					  customer_type ENUM('Business', 'Personal'),
+					  customer_area_id INT,
+					  CONSTRAINT PK_customer PRIMARY KEY (customer_id),
+					  CONSTRAINT FK_customer_rep FOREIGN KEY (assigned_rep_email) REFERENCES sales_rep(rep_email),
+					  CONSTRAINT FK_customer_area FOREIGN KEY (customer_area_id) REFERENCES geo_area(area_id));
+					  
+CREATE table property(property_id INT,
+					  property_address VARCHAR(40),
+					  property_city VARCHAR(15),
+					  property_locality VARCHAR(15),
+					  property_country VARCHAR(15),
+					  property_value INT,
+					  property_rep_email VARCHAR(40),
+					  property_type ENUM('House', 'Flat', 'Bungalow', 'Commercial', 'Land'),
+					  floor_area INT,
+					  lot_size INT,
+					  property_description TEXT,
+					  property_area_id INT,
+					  CONSTRAINT PK_property PRIMARY KEY (property_id),
+					  CONSTRAINT FK_prop_rep FOREIGN KEY (property_rep_email) REFERENCES sales_rep(rep_email),
+					  CONSTRAINT FK_prop_area FOREIGN KEY (property_area_id) REFERENCES geo_area(area_id));
+
+
+
+# =========================================== PART 2A: POPULATION OF SAMPLE DATA ==========================================
+
+# Creating records for sales reps
+INSERT into sales_rep(rep_email, rep_name, rep_salary, rep_startdate)
+				VALUES('cbrown@myhomes.com', 'Curt Brown', 65000, '2012-01-04');
+INSERT into sales_rep(rep_email, rep_name, supervisor_email, rep_salary, rep_startdate)
+				VALUES('swilson@myhomes.com', 'Steven Wilson', 'cbrown@myhomes.com', 60000, '2012-02-18');
+INSERT into sales_rep(rep_email, rep_name, supervisor_email, rep_salary, rep_startdate)
+				VALUES('adodd@myhomes.com', 'Ann Dodd', 'cbrown@myhomes.com', 60000, '2012-03-05');
+INSERT into sales_rep(rep_email, rep_name, supervisor_email, rep_salary, rep_startdate)
+				VALUES('knichols@myhomes.com', 'Kat Nichols', 'adodd@myhomes.com', 50000, '2018-10-20');
+INSERT into sales_rep(rep_email, rep_name, supervisor_email, rep_salary, rep_startdate)
+				VALUES('jellis@myhomes.com', 'June Ellis', 'swilson@myhomes.com', 50000, '2019-12-09');
+INSERT into sales_rep(rep_email, rep_name, supervisor_email, rep_salary, rep_startdate)
+				VALUES('naddler@myhomes.com', 'Nat Addler', 'adodd@myhomes.com', 50000, '2020-01-06');
+
+# Creating records for geographic areas
+INSERT into geo_area(area_id, area_name, chief_rep_email)
+				VALUES(1145, 'UKLOND', 'cbrown@myhomes.com');
+INSERT into geo_area(area_id, area_name, chief_rep_email)
+				VALUES(1285, 'USSLC', 'naddler@myhomes.com');
+INSERT into geo_area(area_id, area_name, chief_rep_email)
+				VALUES(2884, 'USPORTLANDOR', 'jellis@myhomes.com');
+
+# Sales rep records can now be updated with their respective geographic areas
+UPDATE sales_rep SET rep_area_id=1145 WHERE rep_email='cbrown@myhomes.com';
+UPDATE sales_rep SET rep_area_id=1285 WHERE rep_email='naddler@myhomes.com';
+UPDATE sales_rep SET rep_area_id=2884 WHERE rep_email='jellis@myhomes.com';
+UPDATE sales_rep SET rep_area_id=1285 WHERE rep_email='adodd@myhomes.com';
+UPDATE sales_rep SET rep_area_id=1145 WHERE rep_email='knichols@myhomes.com';
+UPDATE sales_rep SET rep_area_id=2884 WHERE rep_email='swilson@myhomes.com';
+
+
+
+# Creating views for better table readability as the property table contains too many columns to fit on the screen
+# property_location to view the full address of a property
+CREATE OR REPLACE VIEW property_location AS SELECT p.property_id, p.property_address, p.property_city, 
+						p.property_locality, p.property_country, a.area_name FROM property p 
+			LEFT JOIN geo_area a ON p.property_area_id=a.area_id;		
+
+# property_summary to see info relevant to company operations
+CREATE OR REPLACE VIEW property_summary 
+			AS SELECT p.property_id, a.area_name, p.property_value, p.property_type, p.property_rep_email, r.rep_name FROM property p 
+			LEFT JOIN geo_area a ON property_area_id=a.area_id
+			LEFT JOIN sales_rep r on p.property_rep_email=r.rep_email;
+
+# property_details to see more specific data on the property
+CREATE OR REPLACE VIEW property_details 
+	AS SELECT property_id, property_type, property_value, floor_area, lot_size, property_description FROM property;
+	
+	
+
+# Creating records for properties	
+INSERT into property(property_id, property_address, property_city, property_locality, property_country, property_rep_email,
+					 property_type, floor_area, lot_size, property_value, property_area_id, property_description)
+			  VALUES(111805, '54 S Freedom Blvd', 'Orem', 'UT', 'USA', 'naddler@myhomes.com',
+					 'House', 1200, 2000, 300000, 1285, '1-bed, 1-bath home with small yard');
+INSERT into property(property_id, property_address, property_city, property_locality, property_country, property_rep_email,
+					 property_type, floor_area, lot_size, property_value, property_area_id, property_description)
+			  VALUES(111623, '12 3 Haverstock Hill', 'London', 'Greater London', 'UK', 'cbrown@myhomes.com',
+					 'Flat', 460, 0, 250000, 1145, '1-bed, 1-bath flat with shared garden');
+INSERT into property(property_id, property_address, property_city, property_locality, property_country, property_rep_email,
+					 property_type, floor_area, lot_size, property_value, property_area_id, property_description)
+			  VALUES(111019, '109 Cary St', 'Lincoln City', 'OR', 'USA', 'jellis@myhomes.com',
+					 'Commercial', 1500, 0, 450000, 2884, 'Office suite with shared parking lot');
+INSERT into property(property_id, property_address, property_city, property_locality, property_country, property_rep_email,
+					 property_type, floor_area, lot_size, property_value, property_area_id, property_description)
+			  VALUES(111225, '45 Eugene Rd', 'Vancouver', 'WA', 'USA', 'swilson@myhomes.com',
+					 'Commercial', 10000, 11000, 580000, 2884, 'Industrial space with loading bay');
+INSERT into property(property_id, property_address, property_city, property_locality, property_country, property_rep_email,
+					 property_type, floor_area, lot_size, property_value, property_area_id, property_description)
+			  VALUES(111142, '895 W 1570 S', 'Springville', 'UT', 'USA', 'naddler@myhomes.com',
+					 'Commercial', 1500, 2500, 390000, 1285, 'Retail space in detached building with limited parking');
+INSERT into property(property_id, property_address, property_city, property_locality, property_country, property_rep_email,
+					 property_type, floor_area, lot_size, property_value, property_area_id, property_description)
+			  VALUES(111701, '1224 S Mill Rd', 'Payson', 'UT', 'USA', 'adodd@myhomes.com',
+					 'Land', 0, 10000, 225000, 1285, 'Empty lot zoned for residential building');
+INSERT into property(property_id, property_address, property_city, property_locality, property_country, property_rep_email,
+					 property_type, floor_area, lot_size, property_value, property_area_id, property_description)
+			  VALUES(111214, '14 Park Ct', 'Rochester', 'Kent', 'UK', 'knichols@myhomes.com',
+					 'Bungalow', 1200, 2400, 350000, 1145, 'Bungalow with fenced garden');
+
+
+
+# Creating views for better table readability as customer table is too wide to fit screen
+# customer_summary for basic info on customer relevant to business operations
+CREATE OR REPLACE VIEW customer_summary AS SELECT c.customer_id, c.contact_name, c.customer_type, a.area_name, r.rep_name, c.assigned_rep_email
+				FROM customer c LEFT JOIN geo_area a ON c.customer_area_id=a.area_id
+				LEFT JOIN sales_rep r ON c.assigned_rep_email=r.rep_email;
+
+# customer_contact for full contact details of customer
+CREATE OR REPLACE VIEW customer_contact AS SELECT customer_id, contact_name, contact_email, contact_address, contact_city,
+				contact_locality, contact_country, contact_phone FROM customer;
+
+
+
+# Creating records for customers
+INSERT into customer(customer_id, contact_name, contact_email, contact_address, contact_city,
+					 contact_locality, contact_country, contact_phone, assigned_rep_email, customer_type, customer_area_id)
+			  VALUES(777422, 'Dan Kestrel', 'dkestrel@mystore.com', '45 Buford Dr', 'Vineyard',
+					 'UT', 'USA', '18019999999', 'adodd@myhomes.com', 'Business', 1285);
+INSERT into customer(customer_id, contact_name, contact_email, contact_address, contact_city,
+					 contact_locality, contact_country, contact_phone, assigned_rep_email, customer_type, customer_area_id)
+			  VALUES(777011, 'May Tukuafu', 'mtukuafu@email.com', '19 Finchley Rd', 'London',
+					 'Greater London', 'UK', '447773333333', 'knichols@myhomes.com', 'Personal', 1145);				 
+INSERT into customer(customer_id, contact_name, contact_email, contact_address, contact_city,
+					 contact_locality, contact_country, contact_phone, assigned_rep_email, customer_type, customer_area_id)
+			  VALUES(777679, 'David Hughes', 'dhughes@nonprofit.org', '322 N West Temple', 'Salt Lake City',
+					 'UT', 'USA', '18012449999', 'naddler@myhomes.com', 'Business', 1285);
+INSERT into customer(customer_id, contact_name, contact_email, contact_address, contact_city,
+					 contact_locality, contact_country, contact_phone, assigned_rep_email, customer_type, customer_area_id)
+			  VALUES(777098, 'Pam Angell', 'pamelaa@mymail.com', '694 W Redwood St', 'Redmond',
+					 'OR', 'USA', '16049999999', 'swilson@myhomes.com', 'Personal', 2884);
+INSERT into customer(customer_id, contact_name, contact_email, contact_address, contact_city,
+					 contact_locality, contact_country, contact_phone, assigned_rep_email, customer_type, customer_area_id)
+			  VALUES(777166, 'Ryan Johnson', 'rjohnson@lawncare.com', '105 Ridge Walk Ct', 'Eugene',
+					 'OR', 'USA', '16049999966', 'jellis@myhomes.com', 'Business', 2884);
+
+
+
+# ============================================= PART 2B: TEST QUERIES ================================================
+
+# Question 1: Display names of representatives, details of the properties they represent, and
+# names of their supervisors.
+SELECT r.rep_name, p.property_id, a.area_name, p.property_type, p.property_value, s.rep_name
+	FROM property p LEFT JOIN geo_area a ON p.property_area_id=a.area_id
+	LEFT JOIN sales_rep r ON p.property_rep_email=r.rep_email
+	LEFT JOIN sales_rep s ON r.supervisor_email=s.rep_email
+	ORDER BY r.rep_name;
+
+# Question 2: Display details of customers together with details of their areas and names of the
+# managers of their areas.
+SELECT c.customer_id, c.contact_name, c.customer_type, a.area_name, r.rep_name AS area_chief_rep, r.rep_email AS area_chief_email
+	FROM customer c LEFT JOIN geo_area a ON c.customer_area_id=a.area_id
+	LEFT JOIN sales_rep r ON a.chief_rep_email=r.rep_email;
+
+
