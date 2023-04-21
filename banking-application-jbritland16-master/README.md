@@ -1,5 +1,7 @@
-This app is currently structured as microservices and has no front end. 
-I had hoped to add front-end logic, but I would need to spend some time learning 
-how to do this, so this is the complete submission for now.
-Please read the instructions on the Confluence page linked here: 
+This project is a group of microservices designed for a banking app.
+It was designed to showcase my skill with Spring Boot, data handling, and back-end logic, so it currently has no user interface.
+If you'd like to test it, you can read the instructions on Confluence and use Postman or another endpoint software.
+Either way, I invite you to look through my code to see how the data is structured and how the logic works.
+Thank you for viewing my project!
+To read the instructions visit the Confluence page linked here: 
 https://juliabritland.atlassian.net/l/cp/Rj9nAw5H
