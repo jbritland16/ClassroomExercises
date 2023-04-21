@@ -1,0 +1,43 @@
+Session started.
+
+
+
+----------------------------------------------------------------------------------------------------
+
+Data for query 1:
+
+Plotting number of models per manufacturer
+Mfr Name
+General Motors          835
+BMW                     644
+Ford Motor Company      524
+Volkswagen Group of     423
+Toyota                  402
+FCA US LLC              399
+Mercedes-Benz           368
+Porsche                 322
+Nissan                  304
+Honda                   232
+Jaguar Land Rover L     222
+Hyundai                 220
+Kia                     193
+MAZDA                   117
+Volvo                   110
+Subaru                  101
+Mitsubishi Motors Co     73
+Chrysler Group LLC       66
+Ferrari                  45
+Maserati                 39
+aston martin             33
+Rolls-Royce              29
+McLaren Automotive       21
+Roush                    14
+Lotus                     4
+Koenigsegg                2
+Pagani Automobili S       2
+Quantum Fuel System       1
+RUF                       1
+SUBARU TECNICA INTE       1
+Mobility Ventures L       1
+Name: Carline, dtype: int64
+Plot was saved as Figure1 in plots folder
