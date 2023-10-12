@@ -1,0 +1,179 @@
+**************************
+AUTHENTICATION MICROSERVICE
+
+***REGISTER FOR USER ACCOUNT***
+POST: http://localhost:8081/users/register
+Example of required information:
+{
+	"email" : "julia@ab.com",
+	"password" : "1234",
+	"firstName" : "Julia",
+	"lastName" : "Britland"
+}
+
+***LOGIN***
+GET: http://localhost:8081/users/login
+Example of required information:
+{
+	"email" : "julia@ab.com",
+	"password" : "1234"
+}
+
+***UPDATE ACCOUNT INFORMATION***
+PATCH: http://localhost:8081/user/update-info
+Example of required information:
+{
+	"accountholderId" : 1,
+	"email" : "julia@ab.com",
+	"firstName" : "Julia",
+	"lastName" : "Britland"
+}
+
+***UPDATE PASSWORD***
+PATCH: http://localhost:8081/user/update-password
+Example of required information:
+{
+	"accountholderId" : 1,
+	"password" : "1234"
+}
+
+***VERIFY WHETHER EMAIL IS AVAILABLE***
+GET: http://localhost:8081/users/email-in-use
+Example of required information:
+{
+	"accountholderId" : 1,
+	"email" : "julia@ab.com"
+}
+
+**************************
+ACCOUNTS AND TRANSACTIONS MICROSERVICE
+
+***CREATE BANK ACCOUNT***
+POST: http://localhost:8082/accounts/create-account
+Example of required information:
+
+{
+    "typeName":"savingsAccount",
+    "accountPrefix" : "SAV",
+    "accountholderId" : 2,
+    "balance" : 100.00,
+    "dateOpened" : [2023, 3, 20, 12, 5, 20],
+    "overdraftLimit" : 100.00
+}
+
+typeName may either be savingsAccount or currentAccount
+
+***GET ACCOUNTS BY USER ID***
+GET: http://localhost:8082/accounts/user-accounts
+Required information: Only the user id as a number
+
+Example:
+
+2
+
+***GET ACCOUNT DETAILS***
+GET: http://localhost:8082/account/account-details
+Required information: Only the account id as a number
+
+Example: 
+
+10000001
+
+***DEPOSIT***
+POST: http://localhost:8082/account/transaction/deposit
+Example of required information:
+
+{
+    "depositAccount" : {
+        "typeName": "savingsAccount",
+        "accountNumber": 10000003
+    },
+    "amount" : 1000.00,
+    "transactionDetails" : "my deposit transaction"
+}
+
+***WITHDRAW***
+POST: http://localhost:8082/account/transaction/withdraw
+Example of required information: 
+
+{
+    "withdrawAccount" : {
+        "typeName": "savingsAccount",
+        "accountNumber": 10000002
+    },
+    "amount" : 100.00,
+    "transactionDetails" : "my withdraw transaction"
+}
+
+***TRANSFER***
+POST: http://localhost:8082/account/transaction/transfer
+Example of required information:
+
+{
+    "withdrawAccount" : {"typeName":"currentAccount", "accountNumber":10000002},
+    "depositAccount" : {"typeName":"savingsAccount", "accountNumber":10000005},
+    "amount" : 900.00,
+    "transactionDetails" : "my transfer transaction"
+}
+
+
+
+******************
+REVERSAL LIST REST CONTROLLER: View only
+
+***VIEW ALL***
+GET: http://localhost:8082/reversals/view-all
+No data required
+
+***VIEW BY TRANSACTION ID***
+GET: http://localhost:8082/reversal/by-transaction-number
+Required information: transaction id as number
+Example: 10000013
+
+***VIEW BY REVERSAL ID***
+GET: http://localhost:8082/reversal/by-id
+Required information: reversal id as number
+Example: 1
+
+
+
+******************
+OFFERS MICROSERVICE REST CONTROLLER
+
+***BROWSE ALL REWARDS***
+GET: http://localhost:8083/rewards/browse-all
+No information required
+
+***VIEW AVAILABLE REWARDS***
+GET: http://localhost:8083/rewards/available
+Required information: The threshold reached as a number
+Example: 1000
+
+***CLAIM REWARD***
+POST: http://localhost:8083/rewards/claim-reward
+Required information example (examples of both posted and digital rewards included):
+
+{
+    "typeName" : "postedOffer",
+    "reward" : {"rewardId" : 4},
+    "accountholderId" : 1,
+    "dateClaimed" : [2023, 3, 21, 12, 5, 20],
+    "destinationAddress" : "1198 Ridge Walk Ct",
+    "destinationCity" : "London",
+    "destinationPostcode" : "NW3 15S"
+}
+
+OR
+
+{
+    "typeName" : "digitalOffer",
+    "reward" : {"rewardId" : 2},
+    "accountholderId" : 1,
+    "dateClaimed" : [2023, 3, 21, 12, 5, 20],
+    "destinationEmail" : "julia@ab.com"
+}
+
+***VIEW PAST REWARDS***
+GET: http://localhost:8083/rewards/past-rewards
+Required information: The accountholderId as a number
+Example: 1
