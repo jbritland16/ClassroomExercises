@@ -4,40 +4,1146 @@ Session started.
 
 ----------------------------------------------------------------------------------------------------
 
-Data for query 1:
+Query 1:
 
-Plotting number of models per manufacturer
-Mfr Name
-General Motors          835
-BMW                     644
-Ford Motor Company      524
-Volkswagen Group of     423
-Toyota                  402
-FCA US LLC              399
-Mercedes-Benz           368
-Porsche                 322
-Nissan                  304
-Honda                   232
-Jaguar Land Rover L     222
-Hyundai                 220
-Kia                     193
-MAZDA                   117
-Volvo                   110
-Subaru                  101
-Mitsubishi Motors Co     73
-Chrysler Group LLC       66
-Ferrari                  45
-Maserati                 39
-aston martin             33
-Rolls-Royce              29
-McLaren Automotive       21
-Roush                    14
-Lotus                     4
-Koenigsegg                2
-Pagani Automobili S       2
-Quantum Fuel System       1
-RUF                       1
-SUBARU TECNICA INTE       1
-Mobility Ventures L       1
-Name: Carline, dtype: int64
-Plot was saved as Figure1 in plots folder
+FILTERED BY Mfr Name: General Motors, Nissan
+       Division                           Carline  Model Year  City FE Highway FE Combined FE
+1     Chevrolet                            MALIBU        2018     68.3       60.4     64.5035
+2     Chevrolet                            MALIBU        2017     68.3       60.4     64.5035
+3     Chevrolet                            MALIBU        2019     68.3       60.4     64.5035
+4     Chevrolet                            MALIBU        2016     61.1       61.9     61.4574
+5        NISSAN                  ROGUE FWD Hybrid        2018     44.6       52.7      47.914
+6        NISSAN                  ROGUE FWD Hybrid        2017     44.6       52.7      47.914
+7        NISSAN                  ROGUE FWD Hybrid        2019     44.6       52.7      47.914
+8        NISSAN                  ROGUE AWD Hybrid        2019   42.189       49.2     45.0797
+9        NISSAN                  ROGUE AWD Hybrid        2018   42.178       49.2     45.0728
+10       NISSAN                  ROGUE AWD Hybrid        2017   42.168       49.2     45.0665
+11       NISSAN                             VERSA        2017  41.6382    57.0052     47.3865
+12       NISSAN                             VERSA        2016  41.5018    57.0347     47.2984
+13       NISSAN                             VERSA        2018  41.2213     57.514     47.2438
+14       NISSAN                             VERSA        2019  40.9053    57.3771     46.9736
+15    Chevrolet                             SPARK        2016     40.9       58.7      47.363
+16       NISSAN                             Kicks        2019  40.6096    52.5458     45.2334
+17    Chevrolet                   CRUZE HATCHBACK        2019     40.5       70.2     50.0238
+18    Chevrolet                             CRUZE        2019     40.5       70.2     50.0238
+19    Chevrolet                             CRUZE        2017     40.5       70.2     50.0238
+20    Chevrolet                   CRUZE HATCHBACK        2018     40.5       70.2     50.0238
+21    Chevrolet                             CRUZE        2018     40.5       70.2     50.0238
+22       NISSAN                             Kicks        2018  40.4934     52.391     45.1025
+23    Chevrolet                   CRUZE HATCHBACK        2018     40.2       77.0     51.2144
+24    Chevrolet                             CRUZE        2017     40.2       77.7     51.3529
+25    Chevrolet                             CRUZE        2018     40.2       77.0     51.2144
+26       NISSAN                        SENTRA FE+        2016       40       56.6     46.0818
+27    Chevrolet                       SPARK ACTIV        2017     39.9       55.4     45.6471
+28    Chevrolet                             SPARK        2017     39.9       55.4     45.6471
+29    Chevrolet                             CRUZE        2019     39.8       56.2     45.8165
+30    Chevrolet                       SPARK ACTIV        2018  39.7733    55.1121     45.4679
+31    Chevrolet                             SPARK        2018  39.7733    55.1121     45.4679
+32    Chevrolet                     CRUZE PREMIER        2016   39.399     60.149     46.6393
+33    Chevrolet                             CRUZE        2016   39.399     60.149     46.6393
+34    Chevrolet                       SPARK ACTIV        2019  39.3246    55.1996     45.1704
+35    Chevrolet                             SPARK        2019  39.3246    55.1996     45.1704
+36    Chevrolet                             SPARK        2016     39.3         58     45.9695
+37    Chevrolet                   CRUZE HATCHBACK        2017     39.1       59.2     46.1513
+38    Chevrolet           CRUZE PREMIER HATCHBACK        2017     39.1       59.2     46.1513
+39    Chevrolet                     CRUZE PREMIER        2017     39.1       59.2     46.1513
+40    Chevrolet                             CRUZE        2017     39.1       59.2     46.1513
+41    Chevrolet                             CRUZE        2018     38.9       58.6     45.8337
+42    Chevrolet                   CRUZE HATCHBACK        2018     38.9       58.6     45.8337
+43    Chevrolet                     CRUZE PREMIER        2018     38.9       58.6     45.8337
+44    Chevrolet                       SPARK ACTIV        2018     38.9       56.9     45.3568
+45    Chevrolet                             SPARK        2018     38.9       56.9     45.3568
+46    Chevrolet           CRUZE PREMIER HATCHBACK        2018     38.9       58.6     45.8337
+47    Chevrolet                       SPARK ACTIV        2017     38.8       56.3     45.1098
+48    Chevrolet                             SPARK        2017     38.8       56.3     45.1098
+49    Chevrolet                       SPARK ACTIV        2019     38.6    55.4254     44.7073
+50    Chevrolet                             SPARK        2019     38.6    55.4254     44.7073
+51       NISSAN                            ALTIMA        2019     38.5       57.1     45.1129
+52     INFINITI                        Q70 HYBRID        2016  38.2484       47.9     42.0623
+53       NISSAN                            SENTRA        2017  38.2027    53.9648     43.9838
+54       NISSAN                            SENTRA        2016  38.1797    53.9523     43.9632
+55       NISSAN                            SENTRA        2019  37.8112    55.7942     44.2257
+56    Chevrolet                            MALIBU        2019     37.8       52.3     43.1882
+57       NISSAN                            SENTRA        2018  37.7547    55.6955     44.1552
+58       NISSAN                            ALTIMA        2017  37.3876    55.9314     43.9438
+59       NISSAN                            ALTIMA        2016  37.3343    56.6364     44.0972
+60    Chevrolet           CRUZE PREMIER HATCHBACK        2019     37.3       55.9     43.8685
+61    Chevrolet                     CRUZE PREMIER        2019     37.3       55.9     43.8685
+62    Chevrolet                   CRUZE HATCHBACK        2019     37.3       55.9     43.8685
+63    Chevrolet                             CRUZE        2019     37.3       55.9     43.8685
+64    Chevrolet                             CRUZE        2017     37.2       58.0     44.3586
+65    Chevrolet                             CRUZE        2016     37.2         58     44.3586
+66    Chevrolet                   CRUZE HATCHBACK        2017     37.2       58.0     44.3586
+67    Chevrolet                             SONIC        2016     37.1       56.8     43.9612
+68    Chevrolet                           SONIC 5        2016     37.1       56.8     43.9612
+69    Chevrolet                 CRUZE LIMITED ECO        2016     37.1         60     44.7932
+70     INFINITI                        Q70 HYBRID        2017     36.8    47.7998      41.051
+71    Chevrolet                           SONIC 5        2017     36.8       55.2     43.2941
+72     INFINITI                        Q70 HYBRID        2018     36.8    47.7998      41.051
+73    Chevrolet                             SONIC        2017     36.8       55.2     43.2941
+74    Chevrolet                             SONIC        2018     36.7       55.0     43.1626
+75    Chevrolet                           SONIC 5        2018     36.7       55.0     43.1626
+76          GMC                       TERRAIN AWD        2019     36.6       56.5     43.4935
+77    Chevrolet                       EQUINOX AWD        2019     36.6       56.5     43.4935
+78    Chevrolet                       EQUINOX AWD        2018     36.6       56.5     43.4935
+79       NISSAN                         ALTIMA SR        2017     36.6       54.4     42.9196
+80          GMC                       TERRAIN AWD        2018     36.6       56.5     43.4935
+81     INFINITI                        Q50 HYBRID        2016  36.5997    47.8487     40.9298
+82       NISSAN                              JUKE        2017  36.5909    45.3958       40.09
+83       NISSAN                             VERSA        2017  36.3227       52.0     42.0241
+84       NISSAN                             VERSA        2016  36.3122         52     42.0163
+85       NISSAN                            SENTRA        2019     36.2       49.5     41.1789
+86       NISSAN                            SENTRA        2017     36.2       49.5     41.1789
+87       NISSAN                            SENTRA        2018     36.2       49.5     41.1789
+88       NISSAN                              JUKE        2016  36.1728     45.924     39.9942
+89       NISSAN                              JUKE        2017     36.1       47.4     40.4381
+90          GMC                       TERRAIN FWD        2018  36.0494    57.7957     43.3973
+91    Chevrolet                       EQUINOX FWD        2018  36.0494    57.7957     43.3973
+92       NISSAN                             VERSA        2018  36.0385    52.5129     41.9625
+93       NISSAN                             VERSA        2019     36.0       52.5     41.9301
+94    Chevrolet                       EQUINOX FWD        2019     36.0       57.8      43.359
+95          GMC                       TERRAIN FWD        2019     36.0       57.8      43.359
+96       NISSAN                ALTIMA SR/PLATINUM        2019     35.9       53.6     42.1659
+97        Buick                            ENCORE        2016  35.8444       48.3     40.5501
+98        Buick                            ENCORE        2018     35.8       48.3     40.5188
+99        Buick                            ENCORE        2017     35.8       48.3     40.5188
+100      NISSAN                              JUKE        2016     35.7       48.1      40.385
+101      NISSAN                 MURANO Hybrid FWD        2016  35.6674    43.5393     38.8263
+102      NISSAN                       Rogue Sport        2019  35.6072     47.415     40.1011
+103   Chevrolet                   CRUZE HATCHBACK        2018     35.5       59.8     43.4442
+104   Chevrolet                             SONIC        2019     35.5       55.6     42.3972
+105   Chevrolet                             CRUZE        2018     35.5       59.8     43.4442
+106      NISSAN                         ALTIMA SR        2016  35.4869    53.4804     41.8183
+107      NISSAN                            ALTIMA        2018  35.2973    54.1171     41.8459
+108      NISSAN                         ALTIMA SR        2018     35.1       53.5      41.527
+109   Chevrolet                            MALIBU        2018     35.0       52.7     41.2317
+110      NISSAN                       Rogue Sport        2017  34.9846    46.3847      39.335
+111      NISSAN                       Rogue Sport        2018  34.9731    46.3732     39.3232
+112    INFINITI                        Q50 HYBRID        2018  34.9499    45.9434     39.1673
+113    INFINITI                        Q50 HYBRID        2017  34.9499    45.9434     39.1673
+114      NISSAN                            SENTRA        2018     34.9       48.7     40.0007
+115      NISSAN                            SENTRA        2017     34.9       48.7     40.0007
+116      NISSAN                        ALTIMA AWD        2019  34.8247     52.547     41.0557
+117   Chevrolet                             SONIC        2016     34.8       51.9     40.8578
+118      NISSAN                            SENTRA        2016     34.8       50.6     40.4893
+119      NISSAN                            SENTRA        2017     34.8       50.6     40.4893
+120   Chevrolet                           SONIC 5        2016     34.8       51.9     40.8578
+121   Chevrolet                             SONIC        2017     34.8       51.9     40.8578
+122   Chevrolet                            MALIBU        2016     34.8       52.9     41.1333
+123   Chevrolet                           SONIC 5        2017     34.8       51.9     40.8578
+124   Chevrolet                            MALIBU        2017     34.8       52.9     41.1333
+125    INFINITI                   QX60 FWD Hybrid        2017  34.7997     40.099     37.0001
+126    INFINITI                   QX60 Hybrid FWD        2016  34.7997     40.099     37.0001
+127    INFINITI                    Q50 HYBRID AWD        2016  34.7482    43.5991     38.2417
+128   Chevrolet                             SONIC        2018     34.7       51.7     40.7262
+129   Chevrolet                           SONIC 5        2018     34.7       51.7     40.7262
+130      NISSAN                            SENTRA        2019     34.5       52.2     40.7121
+131      NISSAN                            SENTRA        2018     34.5       52.2     40.7121
+132      NISSAN                      SENTRA NISMO        2017     34.4       46.4     38.9307
+133      NISSAN                      SENTRA NISMO        2018     34.4       46.4     38.9307
+134      NISSAN                      SENTRA NISMO        2019     34.4       46.4     38.9307
+135      NISSAN                          JUKE AWD        2017   34.288    43.1591     37.7827
+136      NISSAN                          JUKE AWD        2016  34.2802    44.3604     38.1848
+137       Buick                        ENCORE AWD        2017     34.2       44.6     38.2094
+138   Chevrolet                        SONIC 5 RS        2016     34.2       47.5     39.1304
+139      NISSAN                     JUKE NISMO RS        2017     34.2       44.3     38.1099
+140       Buick                            ENCORE        2019     34.2       45.3     38.4384
+141   Chevrolet                          SONIC RS        2016     34.2       47.5     39.1304
+142      NISSAN                     JUKE NISMO RS        2016     34.2       44.3     38.1099
+143       Buick                        ENCORE AWD        2016  34.1988    44.6473     38.2242
+144      NISSAN            ALTIMA AWD SR/PLATINUM        2019     34.1       51.2     40.1315
+145    INFINITI                   QX60 AWD Hybrid        2017  34.0826    39.0869     36.1663
+146    INFINITI                   QX60 Hybrid AWD        2016  34.0775    39.0516     36.1495
+147      NISSAN                   Rogue Sport AWD        2017  34.0019    45.3671      38.322
+148      NISSAN                   Rogue Sport AWD        2018  34.0004     45.349     38.3152
+149   Chevrolet                           SONIC 5        2016     33.9       49.2     39.4158
+150   Chevrolet                             SONIC        2016     33.9       49.2     39.4158
+151   Chevrolet                     CRUZE LIMITED        2016     33.7       53.5      40.434
+152   Chevrolet                 CRUZE LIMITED ECO        2016     33.7         55     40.8125
+153      NISSAN                             VERSA        2016     33.7       51.4     39.8798
+154      NISSAN                             VERSA        2018     33.7       52.0     40.0411
+155      NISSAN                      SENTRA NISMO        2017     33.7       46.4     38.4338
+156      NISSAN                             VERSA        2017     33.7       51.4     39.8798
+157      NISSAN                      SENTRA NISMO        2018     33.7       46.4     38.4338
+158      NISSAN                      SENTRA NISMO        2019     33.7       46.4     38.4338
+159         GMC                       TERRAIN FWD        2019     33.6       44.2     37.6647
+160   Chevrolet                           SONIC 5        2019     33.6       52.2     40.0164
+161   Chevrolet                              TRAX        2019     33.6       47.1     38.5755
+162      NISSAN                   Rogue Sport AWD        2019  33.5769    44.4243     37.7218
+163    INFINITI                    Q50 HYBRID AWD        2018  33.4988    43.5998     37.3977
+164    INFINITI                    Q50 HYBRID AWD        2017  33.4988    43.5998     37.3977
+165      NISSAN                 MURANO Hybrid AWD        2016  33.4527    41.8115     36.7597
+166      NISSAN                         ROGUE FWD        2018  33.3893    48.4142     38.8091
+167       Buick                        ENCORE AWD        2018  33.3498    44.3926     37.5535
+168         GMC                       TERRAIN FWD        2018  33.3304    43.8287     37.3571
+169      NISSAN                         ROGUE FWD        2019  33.3245      47.79     38.5794
+170       Buick                            ENCORE        2016     33.3       53.4     40.0906
+171   Chevrolet                              TRAX        2016     33.3       53.4     40.0906
+172   Chevrolet                     CRUZE LIMITED        2016     33.3       53.4     40.0906
+173   Chevrolet                       EQUINOX FWD        2018     33.3       46.5     38.1768
+174      NISSAN                         ROGUE FWD        2017  33.2646    49.0571     38.8998
+175   Chevrolet                       EQUINOX FWD        2019     33.2       46.3     38.0438
+176   Chevrolet                             SONIC        2019  33.1952       51.1      39.409
+177   Chevrolet                           SONIC 5        2019  33.1952       51.1      39.409
+178      NISSAN                         ROGUE FWD        2016  33.1036    46.8157     38.1292
+179   Chevrolet                             SONIC        2018     33.1       50.7     39.2279
+180   Chevrolet                           SONIC 5        2018     33.1       50.7     39.2279
+181    Cadillac                               CT6        2019  33.0973       50.8     39.2527
+182   Chevrolet                             SONIC        2017     33.0       48.0        38.4
+183   Chevrolet                           SONIC 5        2017     33.0       48.0        38.4
+184       Buick                          LACROSSE        2018     32.9       48.5     38.4679
+185       Buick                            ENCORE        2018     32.9       47.3     38.1227
+186   Chevrolet                              TRAX        2018     32.9       47.3     38.1227
+187   Chevrolet                              TRAX        2017     32.9       47.3     38.1227
+188       Buick                            ENCORE        2017     32.9       47.3     38.1227
+189       Buick                          LACROSSE        2019     32.9       48.5     38.4679
+190      NISSAN                ALTIMA SR/PLATINUM        2019  32.8988    49.0495     38.6215
+191   Chevrolet                             SONIC        2018   32.792    48.6685      38.434
+192   Chevrolet                           SONIC 5        2018   32.792    48.6685      38.434
+193   Chevrolet                       EQUINOX AWD        2019  32.5695    43.2531     36.6423
+194       Buick                            ENCORE        2019     32.2       45.2      36.987
+195       Buick                        ENCORE AWD        2019  32.1496    42.5989     36.1387
+196      NISSAN                 JUKE NISMO RS AWD        2017     32.1       40.6     35.4387
+197      NISSAN                 JUKE NISMO RS AWD        2016     32.1       40.6     35.4387
+198      NISSAN                         ROGUE AWD        2019  32.0947    45.3388     36.9521
+199      NISSAN                         ROGUE AWD        2018   32.056     45.569     36.9924
+200      NISSAN                         ROGUE AWD        2016  32.0449    44.8541     36.7702
+201   Chevrolet                     CRUZE LIMITED        2016       32       51.4      38.547
+202   Chevrolet                          SONIC RS        2016     31.8         47     37.2161
+203   Chevrolet                        SONIC 5 RS        2016     31.8         47     37.2161
+204      NISSAN                         ROGUE AWD        2017   31.656    45.7296     36.7448
+205       Buick                             REGAL        2016     31.5       51.2     38.0961
+206         GMC                       TERRAIN AWD        2018     31.5       41.4     35.2984
+207       Buick                          LACROSSE        2016     31.5       51.2     38.0961
+208   Chevrolet                             SONIC        2017     31.4       49.7     37.6361
+209   Chevrolet                             SONIC        2016     31.4       49.7     37.6361
+210   Chevrolet                           SONIC 5        2016     31.4       49.7     37.6361
+211   Chevrolet                           SONIC 5        2017     31.4       49.7     37.6361
+212    INFINITI                              QX30        2019  31.3337    47.9631     37.1261
+213      NISSAN                   NV200 Cargo Van        2017     31.1       41.1     34.9238
+214      NISSAN                   NV200 Cargo Van        2016     31.1       41.1     34.9238
+215   CHEVROLET            City Express Cargo Van        2017     31.1       41.1     34.9238
+216   CHEVROLET            City Express Cargo Van        2016     31.1       41.1     34.9238
+217    INFINITI                              QX30        2017  31.0731    47.7195     36.8592
+218    INFINITI                              QX30        2018  31.0731    47.7195     36.8592
+219         GMC                       TERRAIN AWD        2019  31.0228    40.3254     34.6163
+220       Buick                        ENCORE AWD        2017     31.0       43.7     35.6641
+221      NISSAN                             VERSA        2015       31         40          35
+222       Buick                        ENCORE AWD        2016       31       43.8      35.694
+223   Chevrolet                          TRAX AWD        2017     31.0       43.7     35.6641
+224   Chevrolet                             SPARK        2015       31         39          34
+225   Chevrolet                          TRAX AWD        2016       31       43.8      35.694
+226    Cadillac                           XT4 FWD        2019     30.9       43.4     35.5013
+227      NISSAN                   NV200 Cargo Van        2019     30.9       41.2     34.8169
+228      NISSAN                   NV200 Cargo Van        2018     30.9       41.2     34.8169
+229   CHEVROLET            City Express Cargo Van        2018     30.9       41.2     34.8169
+230   Chevrolet                          TRAX AWD        2018  30.8801    43.5233     35.5238
+231       Buick                        ENCORE AWD        2018  30.8801    43.5233     35.5238
+232   Chevrolet                       EQUINOX AWD        2018   30.849     42.854     35.2988
+233    INFINITI                              QX50        2019     30.6       44.4     35.5758
+234       Buick                        ENCORE AWD        2019  30.4769    42.6455     34.9668
+235   Chevrolet                          TRAX AWD        2019  30.4769    42.6455     34.9668
+236    INFINITI                          QX50 AWD        2019  30.2532    43.4477      35.042
+237      NISSAN                    NV200 NYC Taxi        2016     30.2       40.5     34.1029
+238      NISSAN                    NV200 NYC Taxi        2017     30.2       40.5     34.1029
+239      NISSAN                    NV200 NYC Taxi        2018     30.2       40.5     34.1029
+240   Chevrolet                    MALIBU LIMITED        2016  30.0797    47.4987     36.0247
+241   Chevrolet                            IMPALA        2016       30       47.7     36.0136
+242   Chevrolet                             SPARK        2015       30         39          34
+243      NISSAN                    NV200 NYC Taxi        2019  29.7946       40.5     33.8171
+244    INFINITI                               Q50        2017  29.2852    46.5634     35.1555
+245    INFINITI                               Q50        2016  29.2852    46.5636     35.1555
+246      NISSAN                            ALTIMA        2018     29.2       45.2     34.7326
+247      NISSAN                            ALTIMA        2017     29.2       45.2     34.7326
+248    INFINITI                               Q50        2019  29.1696    46.1663     34.9618
+249    INFINITI                               Q50        2018  29.0499    45.7486     34.7593
+250   Chevrolet                           SONIC 5        2015       29         40          33
+251      NISSAN                        ALTIMA 3.5        2016       29       44.8     34.4707
+252   Chevrolet                             SONIC        2015       29         40          33
+253   Chevrolet                            MALIBU        2018     28.6       45.6     34.3652
+254         GMC                       TERRAIN FWD        2019     28.6       43.1     33.7023
+255   Chevrolet                            MALIBU        2019     28.6       45.6     34.3652
+256   Chevrolet                       EQUINOX FWD        2018     28.6       43.1     33.7023
+257   Chevrolet                       EQUINOX FWD        2019     28.6       43.1     33.7023
+258         GMC                       TERRAIN FWD        2018     28.6       43.1     33.7023
+259    Cadillac                               ATS        2018     28.6      43.75     33.8794
+260       Buick                      ENVISION FWD        2017     28.6       41.3     33.1932
+261    INFINITI                               Q60        2019  28.5499    46.2486     34.4893
+262    INFINITI                               Q60        2017  28.5499    46.2486     34.4893
+263    INFINITI                               Q60        2018  28.5499    46.2486     34.4893
+264       Buick                             REGAL        2018  28.5363    45.9464     34.4024
+265   Chevrolet                     CRUZE LIMITED        2016     28.5       49.1     35.1331
+266    Cadillac                               ATS        2017  28.4723    43.7471     33.7799
+267    Cadillac                               ATS        2016  28.4586    43.7773     33.7774
+268       Buick                             REGAL        2019   28.447    45.9262     34.3259
+269         GMC                       TERRAIN FWD        2017  28.3968    45.1499     34.0888
+270   Chevrolet                       EQUINOX FWD        2017  28.3968    45.1499     34.0888
+271   Chevrolet                       EQUINOX FWD        2017  28.3968    45.1499     34.0888
+272   Chevrolet                       EQUINOX FWD        2016  28.3968    45.1499     34.0888
+273         GMC                       TERRAIN FWD        2017  28.3968    45.1499     34.0888
+274         GMC                       TERRAIN FWD        2016  28.3968    45.1499     34.0888
+275         GMC                       TERRAIN FWD        2016  28.3968    45.1499     34.0888
+276   Chevrolet                       EQUINOX FWD        2016  28.3968    45.1499     34.0888
+277   Chevrolet                            MALIBU        2016     28.3       46.6     34.3746
+278    Cadillac                               ATS        2019     28.3       43.5     33.5802
+279    INFINITI                           Q50 AWD        2016  28.1821    43.6579     33.5308
+280    INFINITI                           Q50 AWD        2019  28.1675    43.5173      33.482
+281    INFINITI                           Q50 AWD        2017  28.1276    43.4724     33.4391
+282    Cadillac                               ATS        2017     28.1       45.5     33.9408
+283    Cadillac                               ATS        2016     28.1       45.5     33.9408
+284       Buick                      ENVISION FWD        2018     28.1    41.3485     32.8342
+285   Chevrolet                            MALIBU        2017     28.1       47.8      34.498
+286       Buick                      ENVISION FWD        2019     28.1       41.3     32.8204
+287    INFINITI                           Q50 AWD        2018  28.0152    42.9812     33.2205
+288    Cadillac                               CTS        2019     27.9       44.0     33.3995
+289   Chevrolet                      COLORADO 2WD        2016     27.8       42.9      33.032
+290         GMC                        CANYON 2WD        2016     27.8       42.9      33.032
+291    INFINITI                          QX30 AWD        2019  27.7958     42.253     32.8544
+292   Chevrolet                      COLORADO 2WD        2017     27.7       42.7      32.901
+293         GMC                        CANYON 2WD        2017     27.7       42.7      32.901
+294    Cadillac                           CTS AWD        2018     27.7       42.3     32.7935
+295    Cadillac                           ATS AWD        2017     27.7       42.3     32.7935
+296    Cadillac                     CTS SEDAN AWD        2016     27.7       42.3     32.7935
+297    Cadillac                           CTS AWD        2017     27.7       42.3     32.7935
+298    Cadillac                           ATS AWD        2018     27.7       42.3     32.7935
+299   Chevrolet                        BLAZER FWD        2019     27.7       39.8     32.0902
+300    Cadillac                           ATS AWD        2016     27.7       42.3     32.7935
+301   Chevrolet                            CAMARO        2019  27.6735    44.1107     33.2489
+302      NISSAN                            MAXIMA        2017  27.6525    43.2173     33.0009
+303   Chevrolet                            CAMARO        2018  27.6138    44.5441     33.3112
+304   Chevrolet                      COLORADO 2WD        2018     27.6       42.2     32.6893
+305   Chevrolet                            IMPALA        2019     27.6       41.9     32.6079
+306         GMC                        CANYON 2WD        2018     27.6       42.2     32.6893
+307   Chevrolet                            CAMARO        2016  27.5913    44.1466     33.1927
+308   Chevrolet                            IMPALA        2018   27.581    41.8293     32.5741
+309   Chevrolet                            IMPALA        2017  27.5802    41.8002     32.5655
+310    Cadillac                               CT6        2016  27.5607    43.1458     32.9102
+311    Cadillac                           XT4 AWD        2019     27.5       41.1     32.3113
+312      NISSAN                            MAXIMA        2016  27.4769    43.6282     32.9693
+313   Chevrolet                            CAMARO        2017  27.4567    43.8395     33.0074
+314    Cadillac                               CTS        2018  27.4376    42.9328     32.7579
+315    Cadillac                               CT6        2018  27.4376    42.9328     32.7579
+316    Cadillac                               CT6        2017  27.4225    43.2984     32.8412
+317    Cadillac                               CTS        2017  27.4225    43.2984     32.8412
+318   Chevrolet                       EQUINOX AWD        2019     27.4       40.6     32.0958
+319   Chevrolet                       EQUINOX AWD        2018     27.4       40.6     32.0958
+320         GMC                        ACADIA FWD        2017     27.4       38.7     31.5448
+321         GMC                       TERRAIN AWD        2018     27.4       40.6     32.0958
+322         GMC                       TERRAIN AWD        2019     27.4       40.6     32.0958
+323         GMC                        ACADIA FWD        2018     27.4       38.7     31.5448
+324    INFINITI                          QX30 AWD        2018  27.3246      42.29     32.5001
+325    INFINITI                          QX30 AWD        2017  27.3246      42.29     32.5001
+326       Buick                         REGAL AWD        2019     27.2       42.0      32.326
+327       Buick                  REGAL TOUR X AWD        2019     27.2       42.0      32.326
+328         GMC                        ACADIA FWD        2019  27.1793    39.5346     31.6271
+329    Cadillac                         CTS SEDAN        2016     27.1    43.5486     32.6493
+330      NISSAN                        MURANO FWD        2018     27.1       42.0     32.2482
+331      NISSAN                        MURANO FWD        2016  27.0539    41.9075     32.1877
+332      NISSAN                        MURANO FWD        2017  27.0451    41.8899     32.1762
+333       Buick                         REGAL AWD        2018  27.0204    41.8204     32.1385
+334       Buick                  REGAL TOURX  AWD        2018  27.0204    41.8204     32.1385
+335      NISSAN                            ALTIMA        2015       27         38          31
+336   Chevrolet                             SONIC        2015       27         37          31
+337       Buick                      ENVISION AWD        2018     27.0       38.8      31.281
+338      NISSAN                             VERSA        2015       27         36          30
+339   Chevrolet                          SONIC RS        2015       27         34          30
+340       Buick                      ENVISION AWD        2019     27.0       38.8      31.281
+341   Chevrolet                        SONIC 5 RS        2015       27         34          30
+342   Chevrolet                           SONIC 5        2015       27         37          31
+343      NISSAN                            MAXIMA        2018  26.9855    44.0415     32.6809
+344       Buick                      ENVISION AWD        2017     26.9       39.6     31.4369
+345    INFINITI                           Q60 AWD        2018  26.7477    40.9978     31.7071
+346    INFINITI                           Q60 AWD        2017  26.7477    40.9978     31.7071
+347    INFINITI                           Q60 AWD        2019  26.7477    40.9978     31.7071
+348       Buick                          LACROSSE        2017     26.7       45.1     32.7042
+349      NISSAN                        MURANO AWD        2017  26.6571    41.0384     31.6478
+350      NISSAN                        MURANO AWD        2016  26.6568    41.0363      31.647
+351      NISSAN                        MURANO AWD        2018  26.6379    40.9216     31.6017
+352      NISSAN                            MAXIMA        2019  26.6075     43.004     32.1182
+353         GMC                        ACADIA AWD        2017  26.5499    37.4494     30.5512
+354         GMC                        ACADIA AWD        2018  26.5124    37.4123     30.5128
+355       Buick                          LACROSSE        2018     26.5       42.7     31.9557
+356       Buick                            VERANO        2017     26.3       44.5     32.2322
+357       Buick                            VERANO        2016     26.3       44.5     32.2322
+358         GMC                        ACADIA AWD        2019  26.2994    37.8983        30.5
+359    Cadillac                           CTS AWD        2019     26.2       41.2     31.3335
+360       Buick                      LACROSSE AWD        2018     26.2       42.0     31.5391
+361       Buick                         REGAL AWD        2018     26.2       42.0     31.5391
+362    Cadillac                           ATS AWD        2019     26.2       41.2     31.3335
+363   Chevrolet                            CAMARO        2016  26.1677    41.5358     31.3949
+364       Buick                           CASCADA        2019     26.1       42.1     31.4845
+365    INFINITI                          QX60 FWD        2016  26.0996    38.8494      30.622
+366       Buick                           CASCADA        2018  26.0956    42.0964     31.4801
+367   Chevrolet                             CRUZE        2015       26         38          30
+368   Chevrolet                             CRUZE        2015       26         38          30
+369       Buick                             REGAL        2016       26       41.9     31.3542
+370   Chevrolet                             SONIC        2015       26         35          30
+371       Buick                             REGAL        2017     26.0       41.9     31.3542
+372   Chevrolet                           SONIC 5        2015       26         35          30
+373       Buick                            VERANO        2016       26       41.9     31.3542
+374      NISSAN                             VERSA        2015       26         35          30
+375   Chevrolet                       EQUINOX AWD        2016  25.8453    40.1978     30.7928
+376   Chevrolet                       EQUINOX AWD        2016  25.8453    40.1978     30.7928
+377         GMC                       TERRAIN AWD        2016  25.8453    40.1978     30.7928
+378         GMC                       TERRAIN AWD        2017  25.8453    40.1978     30.7928
+379   Chevrolet                       EQUINOX AWD        2017  25.8453    40.1978     30.7928
+380   Chevrolet                       EQUINOX AWD        2017  25.8453    40.1978     30.7928
+381      NISSAN                    PATHFINDER 2WD        2016     25.8       39.1     30.4629
+382    Cadillac                               ATS        2017     25.7       42.2     31.1873
+383       Buick                             REGAL        2016     25.7       43.6      31.524
+384       Buick                            VERANO        2016     25.7       43.6      31.524
+385       Buick                      LACROSSE AWD        2017     25.7       41.3      30.963
+386    Cadillac                               CTS        2018     25.7       42.2     31.1873
+387    Cadillac                               ATS        2018     25.7       42.2     31.1873
+388    Cadillac                               CTS        2017     25.7       42.2     31.1873
+389    Cadillac                               ATS        2016     25.6       41.9     31.0325
+390    Cadillac                         CTS SEDAN        2016     25.6       41.9     31.0325
+391    INFINITI                          QX60 AWD        2016  25.5285    37.0784     29.6903
+392      NISSAN                        MURANO FWD        2019  25.5003    40.8496     30.6895
+393       Buick                          LACROSSE        2019     25.5       43.2     31.2644
+394   Chevrolet                          TRAVERSE        2018     25.5       38.1     29.9584
+395   Chevrolet                      TRAVERSE FWD        2019     25.5       38.1     29.9584
+396       Buick                      ENVISION AWD        2019     25.5       37.1     29.6753
+397       Buick                         REGAL AWD        2019     25.4       40.8      30.597
+398       Buick                      LACROSSE AWD        2019     25.4       40.8      30.597
+399       Buick                           CASCADA        2017     25.3       37.6     29.6672
+400       Buick                           CASCADA        2016     25.3       37.6     29.6672
+401       Buick                      ENVISION AWD        2016     25.2       36.1     29.1624
+402         GMC                        CANYON 2WD        2019     25.2       42.4     30.8275
+403      NISSAN                    PATHFINDER 4WD        2016     25.2       37.7     29.6193
+404   Chevrolet                      COLORADO 2WD        2019     25.2       42.4     30.8275
+405       Buick                      ENVISION AWD        2017     25.2       36.1     29.1624
+406       Buick                      ENVISION AWD        2018  25.1776    36.0552     29.1327
+407    Cadillac                               ATS        2017  25.1444    42.0676     30.7024
+408    INFINITI                   Q50S  RED SPORT        2017     25.1       37.3     29.4319
+409    INFINITI                    Q50S Red Sport        2016     25.1       37.3     29.4319
+410   Chevrolet                            CAMARO        2017  25.0627    42.1571     30.6567
+411    INFINITI                     Q60 RED SPORT        2019  25.0475    39.4997     29.9843
+412    INFINITI                     Q60 RED SPORT        2018  25.0475    39.4997     29.9843
+413      NISSAN                        MURANO AWD        2019   25.024    40.3533     30.1837
+414   Chevrolet                            CAMARO        2018  25.0138    42.7591     30.7579
+415   Chevrolet                            CAMARO        2019  25.0099     42.798     30.7637
+416   Chevrolet                        SONIC 5 RS        2015       25         33          28
+417   Chevrolet                             SONIC        2015       25         35          28
+418       Buick                             REGAL        2015       25         36          29
+419       Buick                          LACROSSE        2015       25         36          29
+420   Chevrolet                             CRUZE        2015       25         36          29
+421         GMC                        CANYON 2WD        2016       25       37.1     29.3003
+422         GMC                    C10 SIERRA 2WD        2019     25.0       37.1     29.3003
+423   Chevrolet                            MALIBU        2015       25         36          29
+424   Chevrolet                      COLORADO 2WD        2016       25       37.1     29.3003
+425   Chevrolet                          SONIC RS        2015       25         33          28
+426   Chevrolet                           SONIC 5        2015       25         35          28
+427   Chevrolet                 C10 SILVERADO 2WD        2019     25.0       37.1     29.3003
+428    INFINITI                               Q50        2018  24.9996     41.099     30.3495
+429    INFINITI                               Q50        2019  24.9996     41.099     30.3495
+430         GMC                        CANYON 2WD        2019     24.9       36.2     28.9693
+431   Chevrolet                      COLORADO 2WD        2018     24.9       36.2     28.9693
+432      NISSAN                    PATHFINDER 2WD        2018     24.9       38.7     29.6593
+433   Chevrolet                      COLORADO 2WD        2019     24.9       36.2     28.9693
+434      NISSAN                    PATHFINDER 2WD        2019     24.9       38.7     29.6593
+435      NISSAN                    PATHFINDER 2WD        2017     24.9       38.7     29.6593
+436         GMC                        CANYON 2WD        2018     24.9       36.2     28.9693
+437    INFINITI                    Q60S RED SPORT        2017  24.8984    37.8997     29.4436
+438      NISSAN                             QUEST        2017  24.8898    38.3403     29.5557
+439      NISSAN                             QUEST        2016  24.8777    38.3118     29.5387
+440    INFINITI                          QX60 FWD        2018  24.7899    37.7905     29.3305
+441    INFINITI                          QX60 FWD        2019  24.7899    37.7905     29.3305
+442    INFINITI                          QX60 FWD        2017  24.7899    37.7905     29.3305
+443    INFINITI                               Q50        2017   24.727    40.8247      30.061
+444         GMC                        CANYON 2WD        2017     24.7       36.2       28.82
+445   Chevrolet                      COLORADO 2WD        2017     24.7       36.2       28.82
+446    Cadillac                               ATS        2018  24.6843     40.668     29.9881
+447   Chevrolet                      COLORADO 4WD        2016  24.6623       40.4     29.9044
+448         GMC                        CANYON 4WD        2016  24.6623       40.4     29.9044
+449    Cadillac                               ATS        2016  24.6575    40.5154     29.9289
+450   Chevrolet                        BLAZER FWD        2019  24.6038    36.7853     28.9122
+451   Chevrolet                      COLORADO 2WD        2018     24.6       36.1     28.7166
+452         GMC                        CANYON 2WD        2018     24.6       36.1     28.7166
+453   Chevrolet                      COLORADO 2WD        2019     24.6       36.1     28.7166
+454         GMC                        CANYON 2WD        2019     24.6       36.1     28.7166
+455    INFINITI                     Q50 RED SPORT        2018  24.5984    36.9499     28.9538
+456    INFINITI                     Q50 RED SPORT        2019  24.5984    36.9499     28.9538
+457         GMC                        CANYON 4WD        2017  24.5975    40.1844     29.7988
+458   Chevrolet                      COLORADO 4WD        2017  24.5975    40.1844     29.7988
+459         GMC                        CANYON 4WD        2018  24.5943    40.0889     29.7726
+460   Chevrolet                      COLORADO 4WD        2018  24.5943    40.0889     29.7726
+461   Chevrolet                            CAMARO        2016  24.5494    39.1885       29.51
+462      NISSAN                    PATHFINDER 4WD        2019     24.5       37.3     28.9743
+463      NISSAN                      FRONTIER 2WD        2019     24.5       33.0     27.7121
+464      NISSAN                    PATHFINDER 4WD        2017     24.5       37.3     28.9743
+465      NISSAN           PATHFINDER 4WD PLATINUM        2018     24.5       36.1     28.6415
+466      NISSAN                    PATHFINDER 4WD        2018     24.5       37.3     28.9743
+467      NISSAN           PATHFINDER 4WD PLATINUM        2016     24.5       36.6     28.7819
+468       Buick                             REGAL        2016     24.5       43.6     30.5156
+469      NISSAN           PATHFINDER 4WD PLATINUM        2019     24.5       36.1     28.6415
+470    INFINITI                 Q50 AWD RED SPORT        2018  24.4963    36.7989     28.8342
+471    INFINITI                 Q50 AWD RED SPORT        2019  24.4963    36.7989     28.8342
+472    Cadillac                               XT5        2017  24.4627    38.7941     29.3402
+473      NISSAN                      FRONTIER 2WD        2016  24.4612    32.2096     27.4306
+474    Cadillac                           ATS AWD        2018     24.4       39.0     29.3432
+475    Cadillac                           CTS AWD        2018     24.4       39.0     29.3432
+476       Buick                             REGAL        2017     24.4       43.3     30.3641
+477       Buick                         REGAL AWD        2017  24.3996    37.5995     28.9774
+478    INFINITI                               Q50        2016  24.3979    40.5549     29.7274
+479    INFINITI                              Q50S        2016  24.3979    40.5549     29.7274
+480    INFINITI                               Q60        2018  24.3676    40.0602     29.5823
+481    Cadillac                               XT5        2019  24.3566    37.0278     28.7901
+482    Cadillac                               XT5        2018  24.3555    37.0265     28.7889
+483   Chevrolet                            CAMARO        2017  24.3513    39.0407     29.3148
+484    INFINITI                               Q60        2019  24.3499    39.7499     29.4914
+485    Cadillac                           ATS AWD        2017     24.3       38.8     29.2127
+486      NISSAN                      FRONTIER 2WD        2017     24.3       31.4     27.0527
+487    Cadillac                     CTS SEDAN AWD        2016     24.3       38.8     29.2127
+488    Cadillac                           CTS AWD        2017     24.3       38.8     29.2127
+489    Cadillac                           ATS AWD        2016     24.3       38.8     29.2127
+490      NISSAN                      FRONTIER 2WD        2018     24.3       31.4     27.0527
+491    INFINITI                               Q60        2017  24.2836    40.1293     29.5309
+492   Chevrolet                      COLORADO 2WD        2016     24.2       36.2     28.4429
+493   Chevrolet                      COLORADO 4WD        2019     24.2       39.7      29.358
+494         GMC                        CANYON 4WD        2019     24.2       39.7      29.358
+495         GMC                        CANYON 2WD        2017     24.2       36.2     28.4429
+496         GMC                        CANYON 2WD        2016     24.2       36.2     28.4429
+497   Chevrolet                      COLORADO 2WD        2017     24.2       36.2     28.4429
+498    INFINITI                           Q50 AWD        2016  24.1666    38.9949     29.1557
+499   Chevrolet                            CAMARO        2018   24.137     40.755     29.5612
+500    INFINITI                Q50S AWD Red Sport        2016     24.1    36.2494     28.3804
+501    Cadillac                               CTS        2019     24.1       40.8     29.5412
+502    Cadillac                               ATS        2019     24.1       40.8     29.5412
+503    INFINITI                Q50S AWD RED SPORT        2017     24.1    36.2494     28.3804
+504   Chevrolet                            CAMARO        2019   24.078    40.7205     29.5043
+505      NISSAN                              370Z        2019  24.0236    37.0772     28.5462
+506    INFINITI                          QX60 AWD        2017  23.9755    36.8983      28.461
+507    INFINITI                           Q60 AWD        2017  23.9478    38.1915     28.7775
+508    INFINITI                          QX60 AWD        2019  23.9438    36.9511     28.4505
+509    INFINITI                          QX60 AWD        2018  23.9401    36.9583     28.4496
+510       Buick                         REGAL AWD        2016     23.9       37.9     28.6649
+511    INFINITI                 Q60 AWD RED SPORT        2018  23.8474    36.4494     28.2413
+512    INFINITI                 Q60 AWD RED SPORT        2019  23.8474    36.4494     28.2413
+513      NISSAN                              370Z        2018     23.8       37.1      28.378
+514      NISSAN                              370Z        2017     23.8       37.1      28.378
+515    INFINITI                           Q50 AWD        2018  23.7776    38.1885     28.6413
+516    INFINITI                           Q50 AWD        2019  23.7735    38.2199     28.6459
+517    INFINITI                           Q50 AWD        2017  23.7655    38.1645     28.6255
+518    INFINITI                           Q60 AWD        2018  23.7005    38.3623     28.6233
+519      NISSAN           PATHFINDER 4WD PLATINUM        2017     23.7       36.2     28.0602
+520    INFINITI                           Q60 AWD        2019     23.6    38.2997      28.527
+521       Buick                          LACROSSE        2016     23.6       40.2     28.9863
+522   Chevrolet                 K10 SILVERADO 4WD        2019     23.6       33.9     27.3378
+523         GMC                    C10 SIERRA 2WD        2019     23.6       33.9     27.3378
+524   Chevrolet                 C10 SILVERADO 2WD        2019     23.6       33.9     27.3378
+525   Chevrolet                            IMPALA        2017     23.6       40.2     28.9863
+526   Chevrolet                            IMPALA        2016     23.6       40.2     28.9863
+527    INFINITI                Q60S AWD RED SPORT        2017   23.549    36.2499     27.9569
+528      NISSAN                              370Z        2016  23.5061    36.1357      27.893
+529   Chevrolet                            IMPALA        2019     23.5       39.4     28.7145
+530   Chevrolet                            IMPALA        2018     23.5       39.4     28.7145
+531         GMC                    K10 SIERRA 4WD        2019  23.4522    33.7868     27.1955
+532   Chevrolet                      COLORADO 4WD        2018  23.3867    33.7214      27.128
+533         GMC                        CANYON 4WD        2018  23.3867    33.7214      27.128
+534    INFINITI                               Q70        2019  23.3706    36.6139      27.914
+535   Chevrolet                      COLORADO 4WD        2019  23.3613    33.7332     27.1126
+536         GMC                        CANYON 4WD        2019  23.3613    33.7332     27.1126
+537    Cadillac                               XTS        2019  23.3213    39.0674     28.4883
+538    Cadillac                               XTS        2018  23.3192    39.0634     28.4856
+539         GMC                        CANYON 4WD        2016     23.3       34.3     27.2296
+540   Chevrolet                      COLORADO 4WD        2017     23.3       34.4     27.2579
+541   Chevrolet                  COLORADO ZR2 4WD        2017     23.3       31.4     26.3599
+542         GMC                        CANYON 4WD        2017     23.3       34.4     27.2579
+543   Chevrolet                  COLORADO ZR2 4WD        2018     23.3       31.4     26.3599
+544   Chevrolet                      COLORADO 4WD        2016     23.3       34.3     27.2296
+545   Chevrolet                        BLAZER AWD        2019     23.2       34.8     27.2941
+546   Chevrolet                            IMPALA        2019     23.2       39.4     28.4671
+547   Chevrolet                            IMPALA        2018     23.2       39.4     28.4671
+548    Cadillac                           CT6 AWD        2016  23.1237     37.842     28.0295
+549   Chevrolet                            IMPALA        2017  23.0882    39.8295     28.4739
+550    Cadillac                           CT6 AWD        2018  23.0034    37.7225     27.9028
+551    Cadillac                           CT6 AWD        2017  23.0019    37.6636      27.887
+552    Cadillac                           XT5 AWD        2019     23.0       35.6     27.3572
+553    Cadillac                           XT5 AWD        2018     23.0       35.6     27.3572
+554    INFINITI                          Q50S AWD        2016  22.9499    36.4997     27.5527
+555   Chevrolet                          TRAVERSE        2018     22.9    38.2997     27.9588
+556       Buick                           ENCLAVE        2018     22.9    38.2997     27.9588
+557      NISSAN                     370Z Roadster        2019  22.8735    35.0767     27.1191
+558       Buick                          LACROSSE        2016  22.7993    39.1199     28.0689
+559   Chevrolet                            IMPALA        2016  22.7993    39.1199     28.0689
+560    Cadillac                               XTS        2016   22.799    39.1189     28.0684
+561    Cadillac                           XT5 AWD        2017  22.7954    37.2825     27.6261
+562    Cadillac                               XTS        2017  22.7844     39.451     28.1327
+563      NISSAN                     370Z Roadster        2016  22.7385    34.4969     26.8581
+564      NISSAN                     370Z Roadster        2017  22.7049    34.4236     26.8124
+565      NISSAN                     370Z Roadster        2018  22.7048    34.4234     26.8121
+566    Cadillac                           CT6 AWD        2018     22.7       36.5     27.3539
+567         GMC                        ACADIA FWD        2017     22.7       35.8     27.1747
+568   Chevrolet                 K10 SILVERADO 4WD        2019     22.7       33.2     26.4667
+569    Cadillac                           CT6 AWD        2017     22.7       36.5     27.3539
+570    Cadillac                           CT6 AWD        2016     22.7       36.5     27.3539
+571   Chevrolet                      COLORADO 2WD        2016     22.7       35.6     27.1227
+572         GMC                        CANYON 2WD        2016     22.7       35.6     27.1227
+573    Cadillac                           CT6 AWD        2019  22.6563     38.002     27.6876
+574      NISSAN                              370Z        2018     22.6       36.4     27.2488
+575   Chevrolet                      TRAVERSE FWD        2019     22.6       38.0     27.6408
+576       Buick                           ENCLAVE        2019     22.6       38.0     27.6408
+577      NISSAN                              370Z        2017     22.6       36.4     27.2488
+578    Cadillac                           XTS AWD        2018   22.449       37.2     27.3248
+579         GMC                        ACADIA FWD        2018     22.4       36.0      26.988
+580    Cadillac                           CT6 AWD        2019     22.4       36.3     27.0634
+581    Cadillac                           XTS AWD        2019     22.4       37.2     27.2849
+582         GMC                        ACADIA FWD        2019     22.4       36.0      26.988
+583   Chevrolet                            CAMARO        2016  22.3771    37.6113     27.3649
+584    INFINITI                               Q70        2016  22.3535    35.5944     26.8477
+585    INFINITI                               Q70        2017  22.3356     35.502     26.8099
+586    INFINITI                               Q70        2018  22.3207    35.4431     26.7829
+587   Chevrolet                    IMPALA LIMITED        2016     22.3       41.6     28.1841
+588      NISSAN                              370Z        2016  22.2513    35.6474       26.78
+589    INFINITI                           Q70 AWD        2019  22.2111    33.6574     26.2244
+590         GMC                        ACADIA AWD        2017     22.2       34.9     26.5472
+591    INFINITI                           Q70 AWD        2018  22.1917    33.8891     26.2725
+592    INFINITI                           Q70 AWD        2017  22.1888    33.9212     26.2789
+593    INFINITI                           Q70 AWD        2016  22.1867    33.9436     26.2833
+594         GMC                    K10 SIERRA 4WD        2019  22.1709    32.1522     25.7711
+595    Cadillac                           CTS AWD        2019     22.1       36.1     26.7721
+596    Cadillac                           ATS AWD        2019     22.1       36.1     26.7721
+597         GMC                    C15 SIERRA 2WD        2016       22    32.9973     25.8816
+598   Chevrolet                 C15 SILVERADO 2WD        2017     22.0       33.0     25.8824
+599   Chevrolet                 C15 SILVERADO 2WD        2016       22    32.9973     25.8816
+600         GMC                       TERRAIN FWD        2015       22         32          26
+601         GMC                        CANYON 2WD        2017     22.0       34.5     26.2857
+602   Chevrolet                            IMPALA        2015       22         31          25
+603   Chevrolet                      COLORADO 2WD        2017     22.0       34.5     26.2857
+604   Chevrolet                       EQUINOX FWD        2015       22         32          26
+605      NISSAN                            ALTIMA        2015       22         32          26
+606   Chevrolet                             CRUZE        2015       22         35          27
+607         GMC                    C15 SIERRA 2WD        2017     22.0       33.0     25.8824
+608         GMC                       TERRAIN FWD        2015       22         32          26
+609   Chevrolet                       EQUINOX FWD        2015       22         32          26
+610         GMC                    C15 SIERRA 2WD        2018     22.0    32.9973     25.8816
+611   Chevrolet                      COLORADO 2WD        2018     22.0       34.5     26.2857
+612         GMC                        CANYON 2WD        2019     22.0       34.5     26.2857
+613   Chevrolet                 C15 SILVERADO 2WD        2018     22.0    32.9973     25.8816
+614   Chevrolet                      COLORADO 2WD        2019     22.0       34.5     26.2857
+615         GMC                        CANYON 2WD        2018     22.0       34.5     26.2857
+616         GMC                    C15 SIERRA 2WD        2018  21.9846    32.9019     25.8434
+617   Chevrolet                 C15 SILVERADO 2WD        2018  21.9759    32.8923     25.8342
+618   Chevrolet                      TRAVERSE AWD        2019  21.9691    34.9212     26.3704
+619   Chevrolet                 C15 SILVERADO 2WD        2017  21.9664    32.9664     25.8475
+620         GMC                    C15 SIERRA 2WD        2017  21.9519    32.9529     25.8327
+621         GMC                    C15 SIERRA 2WD        2016  21.9352    32.7229     25.7561
+622   Chevrolet                 C15 SILVERADO 2WD        2016  21.9341    32.7047     25.7502
+623       Buick                       ENCLAVE AWD        2019     21.9       34.7     26.2588
+624         GMC                        ACADIA AWD        2019     21.8       34.8     26.2052
+625         GMC                        ACADIA AWD        2018     21.8       34.8     26.2052
+626    INFINITI                              QX50        2016     21.7       34.2     25.9717
+627         GMC                        CANYON 4WD        2016     21.7       33.2      25.707
+628    INFINITI                              QX50        2017     21.7       34.2     25.9717
+629   Chevrolet                      COLORADO 4WD        2016     21.7       33.2      25.707
+630      NISSAN                     370Z Roadster        2016  21.6995    34.0988     25.9449
+631      NISSAN                     370Z Roadster        2017   21.667    34.0339     25.9025
+632      NISSAN                     370Z Roadster        2018  21.6663    34.0323     25.9015
+633      NISSAN                      FRONTIER 2WD        2016  21.5513    31.2752     25.0571
+634   Chevrolet                          CORVETTE        2016  21.4926    40.1906     27.1836
+635      NISSAN                      FRONTIER 2WD        2018   21.453     30.561     24.7758
+636      NISSAN                      FRONTIER 2WD        2017   21.453     30.561     24.7758
+637    INFINITI                          QX50 AWD        2016     21.4       33.6     25.5795
+638    INFINITI                          QX50 AWD        2017     21.4       33.6     25.5795
+639    Cadillac                           XTS AWD        2017     21.4       36.8     26.3649
+640      NISSAN                      FRONTIER 2WD        2019  21.3955    30.8776     24.8263
+641   Chevrolet                      TRAVERSE AWD        2018  21.3954    35.2551     25.9939
+642       Buick                       ENCLAVE AWD        2018     21.3       35.1     25.8785
+643   Chevrolet                 C10 SILVERADO 2WD        2019     21.3       33.0     25.3434
+644         GMC                    C10 SIERRA 2WD        2019     21.3       33.0     25.3434
+645       Buick                      LACROSSE AWD        2016     21.3       36.3     26.1655
+646    INFINITI                          QX70 RWD        2017     21.2       33.1     25.2918
+647    INFINITI                          QX70 RWD        2016     21.2       33.1     25.2918
+648    Cadillac                           XTS AWD        2016     21.2       36.9     26.2202
+649    Cadillac                               CTS        2019     21.1       35.0     25.6914
+650    Cadillac                             ATS-V        2017     21.1       35.0     25.6914
+651    Cadillac                             ATS-V        2018     21.1       35.0     25.6914
+652    Cadillac                               CTS        2018     21.1       35.0     25.6914
+653      NISSAN                              370Z        2019     21.1       36.0     25.9293
+654    Cadillac                             ATS-V        2019     21.1       35.0     25.6914
+655   Chevrolet                  COLORADO ZR2 4WD        2019     21.1    31.2493     24.7117
+656    Cadillac                               ATS        2015       21         33          25
+657       Buick                            VERANO        2015       21         30          24
+658    Cadillac                               ATS        2015       21         30          24
+659       Buick                            VERANO        2015       21         32          25
+660   Chevrolet                            MALIBU        2015       21         30          24
+661       Buick                             REGAL        2015       21         30          24
+662         GMC                        CANYON 4WD        2019     20.9       33.2     25.0815
+663   Chevrolet                      COLORADO 4WD        2019     20.9       33.2     25.0815
+664         GMC                       TERRAIN FWD        2016     20.9       35.7     25.6932
+665   Chevrolet                       EQUINOX FWD        2016     20.9       35.7     25.6932
+666   Chevrolet                      COLORADO 4WD        2017     20.9       33.2     25.0815
+667         GMC                        CANYON 4WD        2017     20.9       33.2     25.0815
+668         GMC                        CANYON 4WD        2018     20.8       32.9     24.9252
+669         GMC                C1500 YUKON XL 2WD        2018     20.8       32.7     24.8733
+670   Chevrolet                      COLORADO 4WD        2018     20.8       32.9     24.9252
+671         GMC                   C1500 YUKON 2WD        2018     20.8       32.7     24.8733
+672   Chevrolet                C1500 SUBURBAN 2WD        2018     20.8       32.7     24.8733
+673   Chevrolet                   C1500 TAHOE 2WD        2018     20.8       32.7     24.8733
+674   Chevrolet                 K15 SILVERADO 4WD        2018  20.7828    30.9839     24.3975
+675   Chevrolet                 K15 SILVERADO 4WD        2017  20.7618    30.9943     24.3844
+676         GMC                    K15 SIERRA 4WD        2016  20.7336    30.6298     24.2609
+677         GMC                    K15 SIERRA 4WD        2018  20.7246    30.9248     24.3369
+678   Chevrolet                 K15 SILVERADO 4WD        2016  20.7223    30.6866     24.2684
+679         GMC                    K15 SIERRA 4WD        2017  20.7223    30.9335     24.3375
+680    Cadillac                             ATS-V        2016     20.7       32.1     24.6374
+681         GMC                       TERRAIN FWD        2017     20.7       34.9     25.3395
+682   Chevrolet                 C10 SILVERADO 2WD        2019     20.7       32.1     24.6374
+683   Chevrolet                       EQUINOX FWD        2017     20.7       34.9     25.3395
+684    Cadillac                               SRX        2016   20.615    33.3283      24.887
+685      NISSAN                      FRONTIER 2WD        2016     20.6       31.3     24.3451
+686   Chevrolet                            CAMARO        2018     20.6       39.2     26.1927
+687   Chevrolet                            CAMARO        2016     20.6       39.2     26.1927
+688   Chevrolet                            CAMARO        2017     20.6       39.2     26.1927
+689         GMC                    C10 SIERRA 2WD        2019  20.5291    31.8141     24.4284
+690   Chevrolet                            CAMARO        2019  20.5182    37.9083     25.8557
+691   Chevrolet                            CAMARO        2018   20.502    37.9382     25.8478
+692   Chevrolet                            CAMARO        2016     20.5       33.8      24.911
+693   Chevrolet                            CAMARO        2017     20.5       33.8      24.911
+694   Chevrolet                            CAMARO        2018     20.5       33.8      24.911
+695    INFINITI                               Q70        2016     20.4    33.9493     24.8658
+696      NISSAN                      FRONTIER 2WD        2019     20.4       30.6        24.0
+697    INFINITI                               Q70        2018     20.4    33.9493     24.8658
+698    INFINITI                               Q70        2017     20.4    33.9493     24.8658
+699      NISSAN                      FRONTIER 2WD        2017     20.4       30.6        24.0
+700      NISSAN                      FRONTIER 2WD        2018     20.4       30.6        24.0
+701      NISSAN                              GT-R        2019  20.3209    29.1706     23.5337
+702   Chevrolet                            CAMARO        2017  20.3158    37.2598     25.5429
+703         GMC                    K15 SIERRA 4WD        2017     20.3       29.2     23.5269
+704   Chevrolet                 K15 SILVERADO 4WD        2017     20.3       29.2     23.5269
+705    Cadillac                             ATS-V        2017     20.3       31.6     24.1931
+706         GMC                    K15 SIERRA 4WD        2016     20.3       29.2     23.5269
+707   Chevrolet                 K15 SILVERADO 4WD        2016     20.3       29.2     23.5269
+708    Cadillac                             ATS-V        2019     20.3       31.6     24.1931
+709    Cadillac                             ATS-V        2018     20.3       31.6     24.1931
+710         GMC                    C15 SIERRA 2WD        2018  20.2747    31.9121      24.255
+711      NISSAN                              GT-R        2016  20.2492    30.0482     23.7318
+712   Chevrolet                 C15 SILVERADO 2WD        2018  20.2318    31.9704     24.2363
+713         GMC                    K15 SIERRA 4WD        2018  20.2287    29.0835     23.4402
+714   Chevrolet                 K15 SILVERADO 4WD        2018  20.2287    29.0835     23.4402
+715   Chevrolet                 C15 SILVERADO 2WD        2018  20.2154    31.8231     24.1852
+716         GMC                    C15 SIERRA 2WD        2018  20.2137     31.947     24.2159
+717         GMC                    C15 SIERRA 2WD        2017  20.2031    31.9474     24.2077
+718   Chevrolet                 C15 SILVERADO 2WD        2017  20.2017    31.9482     24.2068
+719      NISSAN                      FRONTIER 2WD        2019  20.1687    31.5306     24.0721
+720      NISSAN                      FRONTIER 2WD        2018  20.1657    31.5336     24.0706
+721      NISSAN                      FRONTIER 2WD        2017  20.1595    31.5396     24.0673
+722    INFINITI                          QX70 AWD        2016  20.1281    30.3922     23.7353
+723    INFINITI                          QX70 AWD        2017  20.1049    30.3574      23.708
+724         GMC                    C15 SIERRA 2WD        2016  20.0956    31.6321     24.0412
+725         GMC                    C15 SIERRA 2WD        2017  20.0659    31.7827     24.0568
+726      NISSAN                              GT-R        2017  20.0489    29.4349     23.4077
+727      NISSAN                              GT-R        2018  20.0489    29.3969     23.3969
+728   Chevrolet                          CORVETTE        2017   20.039    34.5666     24.7128
+729   Chevrolet                 C15 SILVERADO 2WD        2016  20.0377    31.6127     23.9906
+730         GMC                    C15 SIERRA 2WD        2016  20.0355    31.5238     23.9658
+731   Chevrolet                 C15 SILVERADO 2WD        2016  20.0305    31.5205      23.961
+732   Chevrolet                          CORVETTE        2019   20.027    35.4602     24.9046
+733   Chevrolet                 C15 SILVERADO 2WD        2017  20.0092    31.7116     23.9936
+734   Chevrolet                          CORVETTE        2018  20.0021    34.4159     24.6473
+735       Buick                            VERANO        2015       20         31          24
+736    Cadillac                           ATS AWD        2015       20         28          23
+737   Chevrolet                          CORVETTE        2016       20       40.8     25.9542
+738   Chevrolet                       CAPTIVA FWD        2015       20         28          23
+739       Buick                             REGAL        2015       20         31          24
+740         GMC                       TERRAIN AWD        2015       20         29          23
+741   Chevrolet                       EQUINOX AWD        2015       20         29          23
+742    Cadillac                         CTS SEDAN        2015       20         30          24
+743   Chevrolet                       EQUINOX AWD        2015       20         29          23
+744    INFINITI                               Q70        2019  19.9489    34.1997     24.5529
+745   Chevrolet                            CAMARO        2019     19.9       37.0     25.1254
+746    Cadillac                             ATS-V        2016     19.9       33.5     24.3481
+747    Cadillac                         CTS SEDAN        2016     19.9       33.5     24.3481
+748      NISSAN                      FRONTIER 2WD        2016   19.864    31.2427     23.7577
+749      NISSAN                      FRONTIER 4WD        2016  19.8084    29.6718     23.2927
+750         GMC                    K15 SIERRA 4WD        2018  19.8076    30.4775     23.5116
+751   Chevrolet     C15 SILVERADO 2WD CAB CHASSIS        2017     19.8       32.8      24.098
+752   Chevrolet                C1500 SUBURBAN 2WD        2017     19.8       32.8      24.098
+753   Chevrolet                   C1500 TAHOE 2WD        2017     19.8       32.8      24.098
+754         GMC        C15 SIERRA 2WD CAB CHASSIS        2017     19.8       32.8      24.098
+755   Chevrolet                   C1500 TAHOE 2WD        2017     19.8       32.8      24.098
+756   Chevrolet                C1500 SUBURBAN 2WD        2017     19.8       32.8      24.098
+757         GMC                C1500 YUKON XL 2WD        2017     19.8       32.8      24.098
+758   Chevrolet     C15 SILVERADO 2WD CAB CHASSIS        2018     19.8       32.9     24.1222
+759         GMC                   C1500 YUKON 2WD        2017     19.8       32.8      24.098
+760   Chevrolet                   C1500 TAHOE 2WD        2018     19.8       32.9     24.1222
+761   Chevrolet                C1500 SUBURBAN 2WD        2018     19.8       32.9     24.1222
+762         GMC                   C1500 YUKON 2WD        2018     19.8       32.9     24.1222
+763         GMC                C1500 YUKON XL 2WD        2018     19.8       32.9     24.1222
+764         GMC        C15 SIERRA 2WD CAB CHASSIS        2018     19.8       32.9     24.1222
+765         GMC                C1500 YUKON XL 2WD        2017     19.8       32.8      24.098
+766         GMC                   C1500 YUKON 2WD        2017     19.8       32.8      24.098
+767    Cadillac                           SRX AWD        2016  19.7875    31.4973      23.763
+768   Chevrolet                 K15 SILVERADO 4WD        2018  19.7729    30.4749      23.484
+769         GMC                C1500 YUKON XL 2WD        2016     19.7       32.4     23.9191
+770   Chevrolet     C15 SILVERADO 2WD CAB CHASSIS        2016     19.7       32.4     23.9191
+771         GMC                   C1500 YUKON 2WD        2016     19.7       32.4     23.9191
+772   Chevrolet                C1500 SUBURBAN 2WD        2016     19.7       32.4     23.9191
+773   Chevrolet                   C1500 TAHOE 2WD        2016     19.7       32.3     23.8945
+774   Chevrolet                   C1500 TAHOE 2WD        2016     19.7       32.4     23.9191
+775         GMC        C15 SIERRA 2WD CAB CHASSIS        2016     19.7       32.4     23.9191
+776         GMC                    K15 SIERRA 4WD        2018  19.6864    30.8007     23.5028
+777   Chevrolet                 K10 SILVERADO 4WD        2019  19.6497    30.3964     23.3674
+778         GMC                    C15 SIERRA 2WD        2018     19.6       30.0     23.2227
+779   Chevrolet                            CAMARO        2019     19.6       33.4     24.0765
+780   Chevrolet                       EQUINOX AWD        2016     19.6       32.4     23.8378
+781         GMC                       TERRAIN AWD        2016     19.6       32.4     23.8378
+782   Chevrolet                 C15 SILVERADO 2WD        2018     19.6       30.0     23.2227
+783   Chevrolet                 K15 SILVERADO 4WD        2018  19.5762     30.651     23.3772
+784      NISSAN                  FRONTIER 2WD FFV        2018  19.5369    30.6636     23.3496
+785      NISSAN                  FRONTIER 2WD FFV        2017  19.5264    30.6169     23.3292
+786         GMC                    K15 SIERRA 4WD        2016  19.5226    30.5277     23.3029
+787      NISSAN                  FRONTIER 2WD FFV        2019  19.5202    30.6359     23.3293
+788   Chevrolet                 K15 SILVERADO 4WD        2016  19.5013    30.4596     23.2683
+789   Chevrolet                  COLORADO ZR2 4WD        2018     19.5       27.0     22.2857
+790   Chevrolet                  COLORADO ZR2 4WD        2017     19.5       27.0     22.2857
+791    Cadillac                           XTS AWD        2016     19.5       32.2     23.7078
+792    Cadillac                           XTS AWD        2018     19.5       32.2     23.7078
+793    Cadillac                           XTS AWD        2017     19.5       32.2     23.7078
+794         GMC                K10 SIERRA 4WD AT4        2019     19.5       32.1     23.6833
+795   Chevrolet                  COLORADO ZR2 4WD        2019     19.5       27.0     22.2857
+796    INFINITI                           Q70 AWD        2016  19.4779    31.8658     23.6078
+797         GMC                    K15 SIERRA 4WD        2016   19.458    30.4213     23.2243
+798    INFINITI                           Q70 AWD        2017  19.4507    31.8176     23.5739
+799   Chevrolet                 K15 SILVERADO 4WD        2017   19.432    30.8252     23.3088
+800         GMC                    K15 SIERRA 4WD        2017  19.4246    30.7953     23.2952
+801   Chevrolet                 K10 SILVERADO 4WD        2019  19.4142    31.8224     23.5456
+802   Chevrolet                 K15 SILVERADO 4WD        2016   19.409    30.4146     23.1842
+803    Cadillac                           XTS AWD        2019     19.4       32.5     23.6986
+804         GMC                       TERRAIN AWD        2017     19.4       31.5     23.4542
+805   Chevrolet     C10 SILVERADO 2WD CAB CHASSIS        2019     19.4       30.8      23.277
+806    Cadillac                               CTS        2017     19.4       33.1     23.8404
+807   Chevrolet                       EQUINOX AWD        2017     19.4       31.5     23.4542
+808         GMC                C1500 YUKON XL 2WD        2016     19.4       31.4     23.4292
+809         GMC                   C1500 YUKON 2WD        2016     19.4       31.4     23.4292
+810         GMC        C10 SIERRA 2WD CAB CHASSIS        2019     19.4       30.8      23.277
+811   Chevrolet                C1500 SUBURBAN 2WD        2016     19.4       31.4     23.4292
+812         GMC                    K15 SIERRA 4WD        2017  19.3758    30.6003     23.2063
+813   Chevrolet                 K15 SILVERADO 4WD        2017  19.3515    30.5038     23.1622
+814   Chevrolet                 C10 SILVERADO 2WD        2019  19.3194    30.4332     23.1186
+815         GMC                    C10 SIERRA 2WD        2019  19.3099    30.3901     23.0999
+816    INFINITI                           Q70 AWD        2018  19.3085     31.596     23.4043
+817         GMC                   K1500 YUKON 4WD        2017     19.3       30.3     23.0686
+818         GMC                   K1500 YUKON 4WD        2018     19.3       30.3     23.0686
+819   Chevrolet     K15 SILVERADO 4WD CAB CHASSIS        2018     19.3       30.3     23.0686
+820   Chevrolet                   K1500 TAHOE 4WD        2016     19.3       30.3     23.0686
+821   Chevrolet                   K1500 TAHOE 4WD        2016     19.3       30.3     23.0686
+822         GMC                   K1500 YUKON 4WD        2016     19.3       30.3     23.0686
+823         GMC                   K1500 YUKON 4WD        2016     19.3       30.3     23.0686
+824         GMC                   K1500 YUKON 4WD        2018     19.3       30.3     23.0686
+825         GMC                   K1500 YUKON 4WD        2017     19.3       30.3     23.0686
+826   Chevrolet                   K1500 TAHOE 4WD        2018     19.3       30.3     23.0686
+827         GMC        K15 SIERRA 4WD CAB CHASSIS        2018     19.3       30.3     23.0686
+828   Chevrolet                   K1500 TAHOE 4WD        2017     19.3       30.3     23.0686
+829   Chevrolet                   K1500 TAHOE 4WD        2017     19.3       30.3     23.0686
+830         GMC        K15 SIERRA 4WD CAB CHASSIS        2016     19.3       30.3     23.0686
+831   Chevrolet     K15 SILVERADO 4WD CAB CHASSIS        2016     19.3       30.3     23.0686
+832   Chevrolet     K15 SILVERADO 4WD CAB CHASSIS        2017     19.3       30.3     23.0686
+833   Chevrolet                 C15 SILVERADO 2WD        2016     19.3       30.9     23.2231
+834         GMC        K15 SIERRA 4WD CAB CHASSIS        2017     19.3       30.3     23.0686
+835   Chevrolet                   K1500 TAHOE 4WD        2018     19.3       30.3     23.0686
+836         GMC                    C15 SIERRA 2WD        2016  19.2896    30.8801     23.2098
+837      NISSAN                      FRONTIER 4WD        2018   19.255     28.718     22.6072
+838      NISSAN                      FRONTIER 4WD        2019  19.2537    28.7163     22.6058
+839      NISSAN                      FRONTIER 4WD        2017  19.2518    28.7136     22.6036
+840    INFINITI                           Q70 AWD        2019  19.2247    31.8499     23.3985
+841   Chevrolet                 C15 SILVERADO 2WD        2017     19.2       30.7     23.0927
+842         GMC                    C15 SIERRA 2WD        2017     19.2       30.7     23.0927
+843      NISSAN                         TITAN 2WD        2017  19.1205    29.6767     22.7643
+844      NISSAN                         TITAN 2WD        2019  19.1168    29.6825      22.763
+845      NISSAN                         TITAN 2WD        2018  19.1168    29.6825      22.763
+846   Chevrolet                K1500 SUBURBAN 4WD        2016     19.1       30.4     22.9366
+847      NISSAN                         TITAN 4WD        2017     19.1       29.6      22.728
+848         GMC                K1500 YUKON XL 4WD        2016     19.1       30.4     22.9366
+849      NISSAN                         TITAN 4WD        2018     19.1       29.6      22.728
+850      NISSAN                         TITAN 4WD        2019     19.1       29.6      22.728
+851         GMC                K1500 YUKON XL 4WD        2016     19.1       30.4     22.9366
+852   Chevrolet                K1500 SUBURBAN 4WD        2016     19.1       30.4     22.9366
+853         GMC                K1500 YUKON XL 4WD        2017  19.0467    30.1997     22.8429
+854   Chevrolet                K1500 SUBURBAN 4WD        2017  19.0467    30.1997     22.8429
+855   Chevrolet                K1500 SUBURBAN 4WD        2017  19.0467    30.1997     22.8429
+856         GMC                K1500 YUKON XL 4WD        2017  19.0467    30.1997     22.8429
+857   Chevrolet                            CAMARO        2015       19         30          22
+858   Chevrolet                            IMPALA        2015       19         29          22
+859   Chevrolet       K10 SILVERADO 4WD TRAILBOSS        2019     19.0       29.1     22.5168
+860         GMC                K10 SIERRA 4WD AT4        2019     19.0       29.1     22.5168
+861      NISSAN                              370Z        2015       19         26          21
+862       Buick                         REGAL AWD        2015       19         27          22
+863       Buick                             REGAL        2015       19         31          23
+864         GMC                    K10 SIERRA 4WD        2019     19.0       29.1     22.5168
+865    Cadillac                               ATS        2015       19         30          23
+866    Cadillac                     CTS SEDAN AWD        2015       19         28          22
+867    INFINITI                               Q60        2015       19         27          22
+868   Chevrolet                K1500 SUBURBAN 4WD        2018  18.9993    29.9982     22.7535
+869         GMC                K1500 YUKON XL 4WD        2018  18.9993    29.9982     22.7535
+870         GMC                K1500 YUKON XL 4WD        2018   18.999    29.9981     22.7532
+871   Chevrolet                K1500 SUBURBAN 4WD        2018   18.999    29.9981     22.7532
+872   Chevrolet                          CORVETTE        2016     18.9       31.7     23.0968
+873         GMC                K15 SIERRA LTD 4WD        2019     18.8       28.5     22.2001
+874   Chevrolet       K10 SILVERADO 4WD TRAILBOSS        2019     18.8       28.5     22.2001
+875   Chevrolet     K10 SILVERADO 4WD CAB CHASSIS        2019     18.8       28.5     22.2001
+876   Chevrolet              K15 SILVERADO LD 4WD        2019     18.8       28.5     22.2001
+877   Chevrolet          COLORADO CAB CHASSIS 2WD        2019     18.8       24.3      20.932
+878         GMC            CANYON CAB CHASSIS 2WD        2019     18.8       24.3      20.932
+879         GMC        K10 SIERRA 4WD CAB CHASSIS        2019     18.8       28.5     22.2001
+880   Chevrolet                          CORVETTE        2017  18.7883    36.4554     24.0284
+881      NISSAN                      FRONTIER 4WD        2016  18.7804    29.0517     22.3336
+882   Chevrolet                 K10 SILVERADO 4WD        2019  18.7736    28.4603      22.169
+883         GMC                    K10 SIERRA 4WD        2019  18.7033    29.6099     22.4194
+884   Chevrolet                 K15 SILVERADO 4WD        2018     18.7       28.6     22.1503
+885         GMC                    K15 SIERRA 4WD        2018     18.7       28.6     22.1503
+886         GMC            CANYON CAB CHASSIS 2WD        2016     18.7         25     21.0918
+887   Chevrolet          COLORADO CAB CHASSIS 2WD        2016     18.7         25     21.0918
+888      NISSAN                  FRONTIER 4WD FFV        2018  18.6893    28.4585     22.1038
+889      NISSAN                      FRONTIER 4WD        2018  18.6827    28.6247     22.1436
+890      NISSAN                      FRONTIER 4WD        2019  18.6762    28.5762     22.1255
+891      NISSAN                  FRONTIER 4WD FFV        2019  18.6474    28.4143     22.0596
+892      NISSAN                      FRONTIER 4WD        2017  18.6316    28.5968     22.0966
+893      NISSAN                  FRONTIER 4WD FFV        2017  18.6216    28.4562      22.051
+894   Chevrolet                   K1500 TAHOE 4WD        2019     18.6       29.5     22.3094
+895         GMC                   K1500 YUKON 4WD        2019     18.6       29.5     22.3094
+896   Chevrolet     C10 SILVERADO 2WD CAB CHASSIS        2019     18.6       30.1     22.4618
+897   Chevrolet                   K1500 TAHOE 4WD        2019     18.6       29.5     22.3094
+898   Chevrolet              C15 SILVERADO LD 2WD        2019     18.6       30.1     22.4618
+899         GMC                   K1500 YUKON 4WD        2019     18.6       29.5     22.3094
+900         GMC        C10 SIERRA 2WD CAB CHASSIS        2019     18.6       30.1     22.4618
+901         GMC                C15 SIERRA LTD 2WD        2019     18.6       30.1     22.4618
+902   Chevrolet                          CORVETTE        2017  18.5952    30.7737     22.6242
+903   Chevrolet                          CORVETTE        2018  18.5952    30.7737     22.6242
+904   Chevrolet                   C1500 TAHOE 2WD        2019     18.5       31.2     22.6486
+905         GMC                   C1500 YUKON 2WD        2017     18.5       29.9     22.3314
+906         GMC                ACADIA LIMITED FWD        2017     18.5       30.8     22.5529
+907         GMC                   C1500 YUKON 2WD        2019     18.5       31.2     22.6486
+908         GMC                    C15 SIERRA 2WD        2017     18.5    29.9235     22.3373
+909   Chevrolet                C1500 SUBURBAN 2WD        2019     18.5       31.2     22.6486
+910         GMC                C1500 YUKON XL 2WD        2019     18.5       31.2     22.6486
+911   Chevrolet                C1500 SUBURBAN 2WD        2019     18.5       31.2     22.6486
+912   Chevrolet                      TRAVERSE FWD        2017     18.5       30.8     22.5529
+913         GMC                C1500 YUKON XL 2WD        2019     18.5       31.2     22.6486
+914   Chevrolet                   C1500 TAHOE 2WD        2019     18.5       31.2     22.6486
+915         GMC                   C1500 YUKON 2WD        2019     18.5       31.2     22.6486
+916         GMC                C1500 YUKON XL 2WD        2017     18.5       29.9     22.3314
+917    Cadillac                      ESCALADE 2WD        2017     18.5       29.9     22.3314
+918       Buick                       ENCLAVE FWD        2017     18.5       30.8     22.5529
+919   Chevrolet                      TRAVERSE FWD        2016     18.5       30.9      22.577
+920         GMC                        ACADIA FWD        2016     18.5       30.9      22.577
+921         GMC                   C1500 YUKON 2WD        2016     18.5       30.1     22.3814
+922         GMC                C1500 YUKON XL 2WD        2016     18.5       30.1     22.3814
+923    Cadillac                      ESCALADE 2WD        2016     18.5       30.1     22.3814
+924       Buick                       ENCLAVE FWD        2016     18.5       30.9      22.577
+925   Chevrolet                 C15 SILVERADO 2WD        2018     18.5       30.1     22.3814
+926         GMC                    C10 SIERRA 2WD        2019     18.5       29.0     22.1009
+927   Chevrolet                 C15 SILVERADO 2WD        2017     18.5       30.1     22.3814
+928   Chevrolet                 C10 SILVERADO 2WD        2019     18.5       29.0     22.1009
+929   Chevrolet                          CORVETTE        2018   18.498    35.0961     23.4991
+930         GMC                    C15 SIERRA 2WD        2016  18.4729    29.9955     22.3336
+931   Chevrolet          COLORADO CAB CHASSIS 2WD        2017     18.4       24.3      20.657
+932         GMC            CANYON CAB CHASSIS 2WD        2017     18.4       24.3      20.657
+933         GMC                    K15 SIERRA 4WD        2018     18.4       28.2     21.8108
+934   Chevrolet          COLORADO CAB CHASSIS 2WD        2018     18.4       24.3      20.657
+935         GMC                    K10 SIERRA 4WD        2019     18.4       29.3     22.0996
+936   Chevrolet                 K10 SILVERADO 4WD        2019     18.4       29.3     22.0996
+937   Chevrolet                 K15 SILVERADO 4WD        2018     18.4       28.2     21.8108
+938         GMC            CANYON CAB CHASSIS 2WD        2018     18.4       24.3      20.657
+939   Chevrolet                          CORVETTE        2019  18.3533    35.0548     23.3621
+940      NISSAN                  TITAN 4WD PRO-4X        2019  18.3481    28.5082     21.8528
+941      NISSAN                  TITAN 4WD PRO-4X        2018  18.3481    28.5082     21.8528
+942         GMC                    C15 SIERRA 2WD        2018  18.3448    29.4719     22.0994
+943      NISSAN                  TITAN 4WD PRO-4X        2017  18.3225    28.4593     21.8199
+944         GMC                    K15 SIERRA 4WD        2016  18.3081    28.9243     21.9302
+945   Chevrolet                 K15 SILVERADO 4WD        2016  18.3053    28.9157     21.9258
+946         GMC                   K1500 YUKON 4WD        2016     18.3       29.3     22.0201
+947         GMC                    C10 SIERRA 2WD        2019     18.3       28.5      21.813
+948   Chevrolet                 C10 SILVERADO 2WD        2019     18.3       28.5      21.813
+949         GMC                    K15 SIERRA 4WD        2016     18.3       29.3     22.0201
+950   Chevrolet                 K15 SILVERADO 4WD        2016     18.3       29.3     22.0201
+951   Chevrolet                          CORVETTE        2019  18.2978    30.7841     22.3833
+952         GMC                    K10 SIERRA 4WD        2019   18.243    27.6646     21.5448
+953   Chevrolet                 K15 SILVERADO 4WD        2017     18.2       27.7     21.5215
+954    Cadillac                          XTS LIMO        2019     18.2       29.6     22.0155
+955         GMC                    K15 SIERRA 4WD        2017     18.2       27.7     21.5215
+956         GMC                   K1500 YUKON 4WD        2017     18.2       27.7     21.5215
+957    Cadillac                        XTS HEARSE        2019     18.2       29.6     22.0155
+958         GMC                    K10 SIERRA 4WD        2019  18.1634     26.912     21.2758
+959    Cadillac                        XTS HEARSE        2016     18.1       28.8     21.7336
+960    Cadillac                          XTS LIMO        2018     18.1       28.8     21.7336
+961    Cadillac                        XTS HEARSE        2018     18.1       28.8     21.7336
+962   Chevrolet                 C15 SILVERADO 2WD        2016     18.1       28.6     21.6821
+963       Buick                       ENCLAVE AWD        2016     18.1       30.1     22.0571
+964       Buick                       ENCLAVE AWD        2017     18.1       30.1     22.0571
+965    Cadillac                        XTS HEARSE        2017     18.1       28.8     21.7336
+966    Cadillac                          XTS LIMO        2017     18.1       28.8     21.7336
+967   Chevrolet                      TRAVERSE AWD        2017     18.1       30.1     22.0571
+968    Cadillac                          XTS LIMO        2016     18.1       28.8     21.7336
+969   Chevrolet                      TRAVERSE AWD        2016     18.1       30.1     22.0571
+970         GMC                        ACADIA AWD        2016     18.1       30.1     22.0571
+971         GMC                ACADIA LIMITED AWD        2017     18.1       30.1     22.0571
+972    Cadillac                      ESCALADE 4WD        2016  18.0921    28.6674     21.6933
+973   Chevrolet                 K15 SILVERADO 4WD        2017  18.0095    27.9187     21.4327
+974         GMC                    K15 SIERRA 4WD        2017  18.0023    27.9045     21.4233
+975      NISSAN                     370Z Roadster        2015       18         25          21
+976    Cadillac                           ATS AWD        2015       18         26          21
+977    INFINITI                   Q60 Convertible        2015       18         26          20
+978      NISSAN                              370Z        2015       18         26          21
+979    INFINITI                           Q60 AWD        2015       18         25          20
+980   Chevrolet                            IMPALA        2015       18         28          21
+981    Cadillac                               ATS        2015       18         28          22
+982   Chevrolet                    IMPALA LIMITED        2015       18         30          22
+983       Buick                          LACROSSE        2015       18         28          21
+984   Chevrolet                            CAMARO        2015       18         27          21
+985    Cadillac                         CTS SEDAN        2015       18         29          22
+986    Cadillac                               XTS        2015       18         28          21
+987    Cadillac                     CTS SEDAN AWD        2015       18         26          21
+988       Buick                          LACROSSE        2015       18         28          21
+989    Cadillac                      ESCALADE 4WD        2017  17.9974      27.75     21.3784
+990   Chevrolet                 K10 SILVERADO 4WD        2019  17.9559     26.981     21.1376
+991         GMC                K1500 YUKON XL 4WD        2016     17.8       27.8     21.2378
+992   Chevrolet     K10 SILVERADO 4WD CAB CHASSIS        2019     17.8       27.3     21.1049
+993   Chevrolet                                SS        2016     17.8       28.8     21.4943
+994         GMC                K1500 YUKON XL 4WD        2017     17.8       27.8     21.2378
+995   Chevrolet       K10 SILVERADO 4WD TRAILBOSS        2019     17.8       27.3     21.1049
+996         GMC        K10 SIERRA 4WD CAB CHASSIS        2019     17.8       27.3     21.1049
+997   Chevrolet                                SS        2017     17.8       28.8     21.4943
+998         GMC                C1500 YUKON XL 2WD        2018     17.7       31.5     22.0463
+999         GMC                C1500 YUKON XL 2WD        2019     17.7       31.5     22.0463
+1000        GMC                   C1500 YUKON 2WD        2019     17.7       31.5     22.0463
+1001  Chevrolet                   C1500 TAHOE 2WD        2018     17.7       31.5     22.0463
+1002  Chevrolet                   C1500 TAHOE 2WD        2019     17.7       31.5     22.0463
+1003        GMC                   C1500 YUKON 2WD        2018     17.7       31.5     22.0463
+1004  Chevrolet                   K1500 TAHOE 4WD        2018     17.7       30.5     21.8209
+1005  Chevrolet                C1500 SUBURBAN 2WD        2019     17.7       31.5     22.0463
+1006   Cadillac                      ESCALADE 2WD        2019     17.7       31.5     22.0463
+1007        GMC                   K1500 YUKON 4WD        2018     17.7       30.5     21.8209
+1008   Cadillac                      ESCALADE 2WD        2018     17.7       31.5     22.0463
+1009  Chevrolet                   K1500 TAHOE 4WD        2019     17.6       30.1     21.6449
+1010   Cadillac                             CTS-V        2017     17.6       29.5     21.5034
+1011        GMC                   K1500 YUKON 4WD        2019     17.6       30.1     21.6449
+1012   Cadillac                             CTS-V        2018     17.6       29.5     21.5034
+1013   Cadillac                             CTS-V        2016  17.5199    29.3458     21.4008
+1014     NISSAN                        ARMADA 2WD        2017  17.4374    27.6744     20.9197
+1015     NISSAN                        ARMADA 2WD        2018  17.3998    27.5991     20.8705
+1016   Cadillac                      ESCALADE 4WD        2018  17.3724    29.7993     21.3856
+1017     NISSAN                        ARMADA 2WD        2019  17.3644    27.5282     20.8243
+1018   Cadillac                      ESCALADE 4WD        2019  17.3334    29.4941     21.2821
+1019   INFINITI                          QX80 2WD        2017  17.2598    27.9797     20.8555
+1020   INFINITI                          QX80 2WD        2018  17.2499    27.9492     20.8399
+1021   INFINITI                          QX80 2WD        2019  17.2499    27.9492     20.8399
+1022   INFINITI                          QX80 2WD        2016  17.2466    28.0061     20.8515
+1023  Chevrolet                K1500 SUBURBAN 4WD        2019     17.2    28.9986      21.055
+1024        GMC                K1500 YUKON XL 4WD        2019     17.2    28.9986      21.055
+1025  Chevrolet                K1500 SUBURBAN 4WD        2019     17.2       29.0     21.0553
+1026        GMC                K1500 YUKON XL 4WD        2019     17.2       29.0     21.0553
+1027  Chevrolet                          CORVETTE        2015       17         29          21
+1028   Cadillac                           XTS AWD        2015       17         26          20
+1029  Chevrolet                            CAMARO        2015       17         28          20
+1030   Cadillac                               SRX        2015       17         24          19
+1031      Buick                       ENCLAVE FWD        2015       17         24          19
+1032   INFINITI                          QX70 RWD        2015       17         24          19
+1033        GMC                       TERRAIN FWD        2015       17         24          20
+1034  Chevrolet                       EQUINOX FWD        2015       17         24          20
+1035   INFINITI                          QX50 AWD        2015       17         24          20
+1036   INFINITI                              QX50        2015       17         25          20
+1037        GMC                        ACADIA FWD        2015       17         24          19
+1038      Buick                      LACROSSE AWD        2015       17         26          20
+1039  Chevrolet                      TRAVERSE FWD        2015       17         24          19
+1040   INFINITI                               Q60        2015       17         25          20
+1041     NISSAN                     370Z Roadster        2015       17         24          20
+1042  Chevrolet                            CAMARO        2018   16.923    27.1352     20.3733
+1043   Cadillac                             CTS-V        2019     16.9       29.8     20.9885
+1044        GMC                K1500 YUKON XL 4WD        2018     16.9       28.8     20.7601
+1045  Chevrolet                            CAMARO        2017  16.8726    27.0925     20.3223
+1046  Chevrolet                K1500 SUBURBAN 4WD        2019     16.8       28.3     20.5596
+1047  Chevrolet                          CORVETTE        2019     16.8       29.6     20.8591
+1048        GMC                K1500 YUKON XL 4WD        2019     16.8       28.3     20.5596
+1049  Chevrolet                                SS        2017     16.7       28.0     20.4058
+1050  Chevrolet                                SS        2016     16.7         28     20.4058
+1051  Chevrolet                            CAMARO        2019  16.6897    26.9369     20.1369
+1052   INFINITI                          QX80 4WD        2018  16.5894    26.6227     19.9774
+1053   INFINITI                          QX80 4WD        2019  16.5841    26.6094     19.9698
+1054   INFINITI                          QX80 4WD        2016  16.5789    26.6575     19.9778
+1055   INFINITI                          QX80 4WD        2017  16.5533    26.6064     19.9445
+1056  Chevrolet                          CORVETTE        2016     16.4    28.8892     20.3611
+1057  Chevrolet                          CORVETTE        2017     16.4       29.5     20.4957
+1058  Chevrolet                          CORVETTE        2018     16.4       29.4     20.4739
+1059   Cadillac                           CT6 AWD        2019     16.4    30.5948     20.7276
+1060     NISSAN                        ARMADA 4WD        2019  16.3812    26.2377     19.7138
+1061     NISSAN                        ARMADA 4WD        2017  16.3603    25.9246     19.6171
+1062     NISSAN                        ARMADA 4WD        2018  16.2814    26.2718     19.6427
+1063  Chevrolet                C1500 SUBURBAN 2WD        2015       16         23          18
+1064        GMC                       TERRAIN AWD        2015       16         23          19
+1065  Chevrolet                   C1500 TAHOE 2WD        2015       16         23          18
+1066        GMC                    K15 SIERRA 4WD        2015       16         22          18
+1067  Chevrolet                C1500 SUBURBAN 2WD        2015       16         23          18
+1068   INFINITI                   Q60 Convertible        2015       16         24          19
+1069   INFINITI                          QX70 AWD        2015       16         22          18
+1070  Chevrolet                       EQUINOX AWD        2015       16         23          19
+1071        GMC                   C1500 YUKON 2WD        2015       16         23          18
+1072     NISSAN                              GT-R        2015       16         23          19
+1073  Chevrolet                            CAMARO        2015       16         24          19
+1074        GMC                   K1500 YUKON 4WD        2015       16         22          18
+1075   Cadillac                         CTS SEDAN        2015       16         24          18
+1076   Cadillac                           XTS AWD        2015       16         24          19
+1077  Chevrolet                   C1500 TAHOE 2WD        2015       16         23          18
+1078  Chevrolet                 K15 SILVERADO 4WD        2015       16         22          18
+1079        GMC                   C1500 YUKON 2WD        2015       16         23          18
+1080        GMC                   K1500 YUKON 4WD        2015       16         22          18
+1081        GMC                        ACADIA AWD        2015       16         23          19
+1082        GMC                C1500 YUKON XL 2WD        2015       16         23          18
+1083        GMC                C1500 YUKON XL 2WD        2015       16         23          18
+1084  Chevrolet                      TRAVERSE AWD        2015       16         23          19
+1085      Buick                       ENCLAVE AWD        2015       16         22          18
+1086  Chevrolet                   K1500 TAHOE 4WD        2015       16         22          18
+1087  Chevrolet                   K1500 TAHOE 4WD        2015       16         22          18
+1088   Cadillac                           SRX AWD        2015       16         23          18
+1089  Chevrolet                          CORVETTE        2019     15.8       26.0     19.1873
+1090  Chevrolet                            CAMARO        2018     15.3       27.0     19.0062
+1091  Chevrolet                            CAMARO        2019     15.3    27.0009     19.0064
+1092  Chevrolet                            CAMARO        2017  15.1384     26.433     18.7422
+1093  Chevrolet                            CAMARO        2015       15         24          18
+1094  Chevrolet                K1500 SUBURBAN 4WD        2015       15         22          18
+1095        GMC                K1500 YUKON XL 4WD        2015       15         22          18
+1096  Chevrolet                K1500 SUBURBAN 4WD        2015       15         22          18
+1097   Cadillac                      ESCALADE 2WD        2015       15         21          17
+1098   Cadillac                  ESCALADE ESV 2WD        2015       15         21          17
+1099        GMC                C1500 YUKON XL 2WD        2015       15         21          17
+1100        GMC                   C1500 YUKON 2WD        2015       15         21          17
+1101        GMC                K1500 YUKON XL 4WD        2015       15         22          18
+1102  Chevrolet                          CORVETTE        2019     14.7       27.1     18.5116
+1103  Chevrolet                            CAMARO        2015       14         19          16
+1104  Chevrolet                            CAMARO        2015       14         19          16
+1105   Cadillac                               CTS        2015       14         19          16
+1106  Chevrolet                                SS        2015       14         21          17
+1107        GMC                   K1500 YUKON 4WD        2015       14         21          16
+1108   Cadillac                        XTS HEARSE        2015       14         21          17
+1109   Cadillac                  ESCALADE ESV 4WD        2015       14         20          16
+1110   Cadillac                      ESCALADE 4WD        2015       14         21          16
+1111        GMC                K1500 YUKON XL 4WD        2015       14         20          16
+1112   Cadillac                          XTS LIMO        2015       14         21          17
+1113  Chevrolet       G2500 EXPRESS 2WD PASS MDPV        2016     13.1       21.7     15.9434
+1114        GMC        G2500 SAVANA 2WD PASS MDPV        2016     13.1       21.7     15.9434
+1115  Chevrolet       G2500 EXPRESS 2WD PASS MDPV        2017     13.1       21.7     15.9434
+1116        GMC        G2500 SAVANA 2WD PASS MDPV        2017     13.1       21.7     15.9434
+1117  Chevrolet                            CAMARO        2015       13         19          15
+1118        GMC        G3500 SAVANA 2WD PASS MDPV        2016  12.9184    21.5928     15.7691
+1119  Chevrolet       G3500 EXPRESS 2WD PASS MDPV        2016  12.9054     21.585     15.7566
+1120  Chevrolet       G3500 EXPRESS 2WD PASS MDPV        2017  12.8131    21.5297     15.6676
+1121        GMC        G3500 SAVANA 2WD PASS MDPV        2017  12.7994    21.5214     15.6543
+1122  Chevrolet                            CAMARO        2015       12         18          14
+1123   Cadillac                               CTS        2015       12         18          14
+1124        GMC        G3500 SAVANA 2WD PASS MDPV        2015       11         16          12
+1125        GMC        G3500 SAVANA 2WD PASS MDPV        2015       11         16          12
+1126  Chevrolet       G2500 EXPRESS 2WD PASS MDPV        2015       11         16          13
+1127        GMC        G2500 SAVANA 2WD PASS MDPV        2015       11         16          13
+1128  Chevrolet       G2500 EXPRESS 2WD PASS MDPV        2015       11         17          13
+1129        GMC        G2500 SAVANA 2WD PASS MDPV        2015       11         16          13
+1130        GMC        G2500 SAVANA 2WD PASS MDPV        2015       11         17          13
+1131  Chevrolet       G3500 EXPRESS 2WD PASS MDPV        2015       11         16          12
+1132  Chevrolet       G3500 EXPRESS 2WD PASS MDPV        2015       11         16          12
+1133  Chevrolet       G3500 EXPRESS 2WD PASS MDPV        2015       11         17          13
+1134  Chevrolet       G2500 EXPRESS 2WD PASS MDPV        2015       11         16          13
+1135        GMC        G3500 SAVANA 2WD PASS MDPV        2015       11         17          13
+1136  Chevrolet  G2500 EXPRESS CONV 2WD CARGOMDPV        2015       10         15          12
+1137  Chevrolet  G2500 EXPRESS CONV 2WD CARGOMDPV        2015       10         15          12
+1138        GMC  G2500 SAVANA CONV 2WD CARGO MDPV        2015       10         15          12
+1139        GMC  G2500 SAVANA CONV 2WD CARGO MDPV        2015       10         15          12
