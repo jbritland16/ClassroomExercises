@@ -33,7 +33,6 @@ public class Transaction {
 	private long transactionId;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "accountPrefix")
 	@JoinColumn(name = "accountNumber")
 	private BankAccount account;
 	
